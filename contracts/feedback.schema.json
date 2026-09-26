@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.gov.hk/schemas/feedback.schema.json",
+  "title": "社区组织授权反馈信封",
+  "description": "社区组织只能反馈已获居民授权的个案；个人申请信息不得外泄。本契约同时约束组织授权登记、提交载荷与对外可见视图。",
+  "type": "object",
+  "required": ["organizations", "cases"],
+  "properties": {
+    "organizations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/organization" }
+    },
+    "cases": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/feedback_case" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "organization": {
+      "type": "object",
+      "description": "社区组织授权登记：令牌、可反馈的议题范围与地区范围。",
+      "required": ["org_code", "name", "scope_codes", "districts", "access_token"],
+      "properties": {
+        "org_code": { "type": "string" },
+        "name": { "type": "string" },
+        "scope_codes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "被授权的议题代码"
+        },
+        "districts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "access_token": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "feedback_case": {
+      "type": "object",
+      "required": [
+        "case_ref",
+        "target_id",
+        "milestone_id",
+        "org_code",
+        "issue_domain",
+        "status",
+        "consent",
+        "created_at",
+        "events"
+      ],
+      "properties": {
+        "case_ref": {
+          "type": "string",
+          "description": "个案编号（不含个人标识），由系统派发"
+        },
+        "target_id": { "type": "string" },
+        "milestone_id": { "type": ["string", "null"] },
+        "org_code": {
+          "type": "string",
+          "description": "提交的社区组织代码；只能在其授权范围内提交"
+        },
+        "issue_domain": {
+          "type": "string",
+          "enum": ["public_housing", "subdivided_flats", "healthcare", "district_health", "youth", "other"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["received", "triaged", "referred", "resolved", "rejected"]
+        },
+        "consent": {
+          "type": "object",
+          "required": ["grant", "scope_codes", "granted_at", "record_ref_hash"],
+          "description": "授权凭据。grant=false 的个案系统必须拒绝接收。",
+          "properties": {
+            "grant": { "type": "boolean" },
+            "scope_codes": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string" },
+              "description": "授权范围代码，必须为该组织被授予范围的子集"
+            },
+            "granted_at": { "type": "string", "format": "date-time" },
+            "record_ref_hash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "description": "授权书档号的哈希；原件与个人身份信息不进入本系统"
+            },
+            "expires_at": { "type": ["string", "null"], "format": "date-time" }
+          },
+          "additionalProperties": false
+        },
+        "resident": {
+          "type": "object",
+          "description": "居民信息仅存假名化令牌，任何视图都不得还原身份。",
+          "required": ["pseudonym", "district"],
+          "properties": {
+            "pseudonym": {
+              "type": "string",
+              "pattern": "^PSN-[A-Z0-9]{8,}$",
+              "description": "假名化令牌，如 PSN-7F3A9K2Q"
+            },
+            "district": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "summary": {
+          "type": "string",
+          "description": "去标识描述；不得包含姓名、身份证号、电话、住址、申请编号"
+        },
+        "created_at": { "type": "string", "format": "date-time" },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["at", "action", "by_org"],
+            "properties": {
+              "at": { "type": "string", "format": "date-time" },
+              "action": {
+                "type": "string",
+                "enum": ["submitted", "triaged", "referred", "responded", "resolved", "rejected"]
+              },
+              "by_org": { "type": "string" },
+              "note_public": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

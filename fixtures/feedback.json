@@ -1,0 +1,157 @@
+{
+  "organizations": [
+    {
+      "org_code": "CSO-KT",
+      "name": "观塘友里基层协会（样例）",
+      "scope_codes": [
+        "subdivided_flats",
+        "public_housing"
+      ],
+      "districts": [
+        "观塘",
+        "黄大仙",
+        "西贡"
+      ],
+      "access_token": "TOKEN-KT-DEMO-001"
+    },
+    {
+      "org_code": "CSO-MK",
+      "name": "油尖旺健康互助组（样例）",
+      "scope_codes": [
+        "district_health",
+        "healthcare"
+      ],
+      "districts": [
+        "油尖旺"
+      ],
+      "access_token": "TOKEN-MK-DEMO-002"
+    },
+    {
+      "org_code": "CSO-NW",
+      "name": "新界西北青年连线（样例）",
+      "scope_codes": [
+        "youth"
+      ],
+      "districts": [
+        "元朗",
+        "屯门"
+      ],
+      "access_token": "TOKEN-NW-DEMO-003"
+    }
+  ],
+  "cases": [
+    {
+      "case_ref": "CASE-2026-0001",
+      "target_id": "T-SF-01",
+      "milestone_id": "MS-SF01-Q5",
+      "org_code": "CSO-KT",
+      "issue_domain": "subdivided_flats",
+      "status": "referred",
+      "consent": {
+        "grant": true,
+        "scope_codes": [
+          "subdivided_flats"
+        ],
+        "granted_at": "2026-07-02T14:00:00+08:00",
+        "record_ref_hash": "793f50946ef5fd845a4c9db5d973cdbe80860ce628356af1923efe9a1b9c3f84",
+        "expires_at": "2027-07-02T14:00:00+08:00"
+      },
+      "resident": {
+        "pseudonym": "PSN-7F3A9K2Q",
+        "district": "观塘"
+      },
+      "summary": "住户反映单位内消防通风设施欠妥，业主长期未维修，希望转介联合专责小组跟进。",
+      "created_at": "2026-07-03T10:20:00+08:00",
+      "events": [
+        {
+          "at": "2026-07-03T10:20:00+08:00",
+          "action": "submitted",
+          "by_org": "CSO-KT"
+        },
+        {
+          "at": "2026-07-08T11:00:00+08:00",
+          "action": "triaged",
+          "by_org": "HB",
+          "note_public": "已核对授权范围，归类为消防设施合规个案。"
+        },
+        {
+          "at": "2026-07-15T09:30:00+08:00",
+          "action": "referred",
+          "by_org": "BD",
+          "note_public": "转介屋宇署联合专责小组排期视察。"
+        }
+      ]
+    },
+    {
+      "case_ref": "CASE-2026-0002",
+      "target_id": "T-DH-01",
+      "milestone_id": null,
+      "org_code": "CSO-MK",
+      "issue_domain": "district_health",
+      "status": "resolved",
+      "consent": {
+        "grant": true,
+        "scope_codes": [
+          "district_health"
+        ],
+        "granted_at": "2026-05-11T09:00:00+08:00",
+        "record_ref_hash": "542cd196b44f25335fb6dcd727084f2066016cdef0618f14526577793e6454de",
+        "expires_at": null
+      },
+      "resident": {
+        "pseudonym": "PSN-2D9L4QRT",
+        "district": "油尖旺"
+      },
+      "summary": "长者反映康健中心健康评估转介专科轮候时间不清晰，希望收到书面进度通知。",
+      "created_at": "2026-05-12T15:40:00+08:00",
+      "events": [
+        {
+          "at": "2026-05-12T15:40:00+08:00",
+          "action": "submitted",
+          "by_org": "CSO-MK"
+        },
+        {
+          "at": "2026-05-20T10:00:00+08:00",
+          "action": "responded",
+          "by_org": "DH",
+          "note_public": "中心已增设转候进度短讯，并在网页公布各区分区轮候概览。"
+        },
+        {
+          "at": "2026-06-02T10:00:00+08:00",
+          "action": "resolved",
+          "by_org": "CSO-MK"
+        }
+      ]
+    },
+    {
+      "case_ref": "CASE-2026-0003",
+      "target_id": "T-YT-01",
+      "milestone_id": null,
+      "org_code": "CSO-NW",
+      "issue_domain": "youth",
+      "status": "received",
+      "consent": {
+        "grant": true,
+        "scope_codes": [
+          "youth"
+        ],
+        "granted_at": "2026-09-18T18:00:00+08:00",
+        "record_ref_hash": "d402769851ef54684f6e4bdb15994e4ae71829a5383e9696884b147d7dc89cf6",
+        "expires_at": null
+      },
+      "resident": {
+        "pseudonym": "PSN-9B2X7HME",
+        "district": "元朗"
+      },
+      "summary": "在职青年查询实习资助计划下一轮申请时间与行业范围。",
+      "created_at": "2026-09-19T12:05:00+08:00",
+      "events": [
+        {
+          "at": "2026-09-19T12:05:00+08:00",
+          "action": "submitted",
+          "by_org": "CSO-NW"
+        }
+      ]
+    }
+  ]
+}

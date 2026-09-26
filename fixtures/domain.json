@@ -1,0 +1,2071 @@
+{
+  "package_id": "PLG-2026-09-26-01",
+  "generated_at": "2026-09-26T09:00:00+08:00",
+  "rules_version": "status-rules-v1.0",
+  "targets": [
+    {
+      "target_id": "T-HS-01",
+      "domain": "public_housing",
+      "title": "五年内建成公营房屋单位",
+      "metric_code": "HS-UNIT",
+      "metric_name": "期内建成公营房屋单位（累计）",
+      "direction": "maximize",
+      "baseline": {
+        "value": 0,
+        "as_of": "2025-03-31",
+        "metric_version": "v1"
+      },
+      "target_value": 196000,
+      "unit": "个",
+      "period_start": "2025-04-01",
+      "period_end": "2030-03-31",
+      "responsible_orgs": [
+        {
+          "org_code": "HB",
+          "name": "房屋局（样例）",
+          "role": "lead"
+        },
+        {
+          "org_code": "HD",
+          "name": "房屋署（样例）",
+          "role": "supporting"
+        }
+      ],
+      "budget": [
+        {
+          "amount_hkd_million": 42000,
+          "fiscal_year": "2025-26",
+          "status": "approved"
+        },
+        {
+          "amount_hkd_million": 39800,
+          "fiscal_year": "2025-26",
+          "status": "spent"
+        },
+        {
+          "amount_hkd_million": 45500,
+          "fiscal_year": "2026-27",
+          "status": "approved"
+        }
+      ],
+      "linked_spatial_project_ids": [
+        "SP-HS-01",
+        "SP-HS-02"
+      ],
+      "linked_consultation_ids": [
+        "CON-001"
+      ],
+      "locked": true,
+      "history": [
+        {
+          "at": "2025-04-01T09:00:00+08:00",
+          "event": "published",
+          "detail": "随五年规划公布：196000 个公营房屋单位",
+          "by_org": "HB"
+        },
+        {
+          "at": "2025-04-01T09:05:00+08:00",
+          "event": "locked",
+          "detail": "五年目标值锁定，年度方案只能调整实现路径",
+          "by_org": "HB"
+        }
+      ]
+    },
+    {
+      "target_id": "T-HS-02",
+      "domain": "public_housing",
+      "title": "缩短公屋一般申请者平均轮候时间",
+      "metric_code": "HS-LTM",
+      "metric_name": "一般申请者平均轮候时间",
+      "direction": "minimize",
+      "baseline": {
+        "value": 5.3,
+        "as_of": "2025-03-31",
+        "metric_version": "v1"
+      },
+      "target_value": 3.0,
+      "unit": "年",
+      "period_start": "2025-04-01",
+      "period_end": "2030-03-31",
+      "responsible_orgs": [
+        {
+          "org_code": "HB",
+          "name": "房屋局（样例）",
+          "role": "lead"
+        },
+        {
+          "org_code": "HD",
+          "name": "房屋署（样例）",
+          "role": "supporting"
+        }
+      ],
+      "budget": [
+        {
+          "amount_hkd_million": 320,
+          "fiscal_year": "2025-26",
+          "status": "spent"
+        },
+        {
+          "amount_hkd_million": 360,
+          "fiscal_year": "2026-27",
+          "status": "approved"
+        }
+      ],
+      "linked_spatial_project_ids": [],
+      "linked_consultation_ids": [
+        "CON-001"
+      ],
+      "locked": true,
+      "history": [
+        {
+          "at": "2025-04-01T09:00:00+08:00",
+          "event": "published",
+          "detail": "五年末平均轮候时间降至 3.0 年",
+          "by_org": "HB"
+        },
+        {
+          "at": "2025-04-01T09:05:00+08:00",
+          "event": "locked",
+          "detail": "目标锁定",
+          "by_org": "HB"
+        }
+      ]
+    },
+    {
+      "target_id": "T-SF-01",
+      "domain": "subdivided_flats",
+      "title": "完成劣质劏房处所治理（合规或取缔）",
+      "metric_code": "SF-PRM",
+      "metric_name": "完成治理的不合标准处所（累计）",
+      "direction": "maximize",
+      "baseline": {
+        "value": 0,
+        "as_of": "2025-03-31",
+        "metric_version": "v1"
+      },
+      "target_value": 20000,
+      "unit": "处",
+      "period_start": "2025-04-01",
+      "period_end": "2030-03-31",
+      "responsible_orgs": [
+        {
+          "org_code": "HB",
+          "name": "房屋局（样例）",
+          "role": "lead"
+        },
+        {
+          "org_code": "BD",
+          "name": "屋宇署（样例）",
+          "role": "supporting"
+        },
+        {
+          "org_code": "FEHD",
+          "name": "食物环境衞生署（样例）",
+          "role": "supporting"
+        }
+      ],
+      "budget": [
+        {
+          "amount_hkd_million": 180,
+          "fiscal_year": "2025-26",
+          "status": "spent"
+        },
+        {
+          "amount_hkd_million": 180,
+          "fiscal_year": "2026-27",
+          "status": "approved"
+        },
+        {
+          "amount_hkd_million": 120,
+          "fiscal_year": "2026-27",
+          "status": "revised"
+        }
+      ],
+      "linked_spatial_project_ids": [],
+      "linked_consultation_ids": [
+        "CON-001",
+        "CON-002"
+      ],
+      "locked": true,
+      "history": [
+        {
+          "at": "2025-04-01T09:00:00+08:00",
+          "event": "published",
+          "detail": "已识别约 20000 处不合标准处所，五年内完成治理",
+          "by_org": "HB"
+        },
+        {
+          "at": "2025-04-01T09:05:00+08:00",
+          "event": "locked",
+          "detail": "目标锁定",
+          "by_org": "HB"
+        },
+        {
+          "at": "2026-05-18T15:00:00+08:00",
+          "event": "rewrite_rejected",
+          "detail": "2026-27 年度方案草拟稿拟以「已视察处所」替换「完成治理处所」口径并下调分母，被目标治理机制拒绝：在未附口径桥接的情况下径换分母等同改写五年目标",
+          "by_org": "HB"
+        }
+      ]
+    },
+    {
+      "target_id": "T-HC-01",
+      "domain": "healthcare_beds",
+      "title": "五年内净增公立医院病床",
+      "metric_code": "HC-BED",
+      "metric_name": "公立医院病床净增数目（累计）",
+      "direction": "maximize",
+      "baseline": {
+        "value": 0,
+        "as_of": "2025-03-31",
+        "metric_version": "v1"
+      },
+      "target_value": 3000,
+      "unit": "张",
+      "period_start": "2025-04-01",
+      "period_end": "2030-03-31",
+      "responsible_orgs": [
+        {
+          "org_code": "HHB",
+          "name": "医务衞生局（样例）",
+          "role": "lead"
+        },
+        {
+          "org_code": "HA",
+          "name": "医院管理局（样例）",
+          "role": "supporting"
+        }
+      ],
+      "budget": [
+        {
+          "amount_hkd_million": 8600,
+          "fiscal_year": "2025-26",
+          "status": "spent"
+        },
+        {
+          "amount_hkd_million": 9200,
+          "fiscal_year": "2026-27",
+          "status": "approved"
+        }
+      ],
+      "linked_spatial_project_ids": [
+        "SP-HC-01",
+        "SP-HC-02"
+      ],
+      "linked_consultation_ids": [
+        "CON-001"
+      ],
+      "locked": true,
+      "history": [
+        {
+          "at": "2025-04-01T09:00:00+08:00",
+          "event": "published",
+          "detail": "五年净增 3000 张公立医院病床",
+          "by_org": "HHB"
+        },
+        {
+          "at": "2025-04-01T09:05:00+08:00",
+          "event": "locked",
+          "detail": "目标锁定",
+          "by_org": "HHB"
+        }
+      ]
+    },
+    {
+      "target_id": "T-DH-01",
+      "domain": "district_health",
+      "title": "扩展地区康健中心网络受惠规模",
+      "metric_code": "DHC-SVC",
+      "metric_name": "康健中心累计服务（口径见桥接 BR-DHC-01）",
+      "direction": "maximize",
+      "baseline": {
+        "value": 0,
+        "as_of": "2025-03-31",
+        "metric_version": "v1"
+      },
+      "target_value": 800000,
+      "unit": "人（v1 登记会员）",
+      "period_start": "2025-04-01",
+      "period_end": "2030-03-31",
+      "responsible_orgs": [
+        {
+          "org_code": "HHB",
+          "name": "医务衞生局（样例）",
+          "role": "lead"
+        },
+        {
+          "org_code": "DH",
+          "name": "衞生署（样例）",
+          "role": "supporting"
+        }
+      ],
+      "budget": [
+        {
+          "amount_hkd_million": 740,
+          "fiscal_year": "2025-26",
+          "status": "spent"
+        },
+        {
+          "amount_hkd_million": 910,
+          "fiscal_year": "2026-27",
+          "status": "approved"
+        }
+      ],
+      "linked_spatial_project_ids": [
+        "SP-DH-01"
+      ],
+      "linked_consultation_ids": [
+        "CON-001",
+        "CON-003"
+      ],
+      "locked": true,
+      "history": [
+        {
+          "at": "2025-04-01T09:00:00+08:00",
+          "event": "published",
+          "detail": "v1 口径：登记会员 800000 人",
+          "by_org": "HHB"
+        },
+        {
+          "at": "2025-04-01T09:05:00+08:00",
+          "event": "locked",
+          "detail": "目标按 v1 口径锁定",
+          "by_org": "HHB"
+        },
+        {
+          "at": "2026-04-01T00:00:00+08:00",
+          "event": "clarified",
+          "detail": "口径经 REV-004 改为 v2 服务人次，附桥接 BR-DHC-01 并重述历史；五年目标 v1 等效值 800000 不变",
+          "by_org": "HHB"
+        }
+      ]
+    },
+    {
+      "target_id": "T-YT-01",
+      "domain": "youth",
+      "title": "青年实习、交流与住屋项目受惠人数",
+      "metric_code": "YTH-CNT",
+      "metric_name": "青年项目受惠人数（累计）",
+      "direction": "maximize",
+      "baseline": {
+        "value": 0,
+        "as_of": "2025-03-31",
+        "metric_version": "v1"
+      },
+      "target_value": 80000,
+      "unit": "人",
+      "period_start": "2025-04-01",
+      "period_end": "2030-03-31",
+      "responsible_orgs": [
+        {
+          "org_code": "HAB",
+          "name": "民政及青年事务局（样例）",
+          "role": "lead"
+        }
+      ],
+      "budget": [
+        {
+          "amount_hkd_million": 260,
+          "fiscal_year": "2025-26",
+          "status": "spent"
+        },
+        {
+          "amount_hkd_million": 300,
+          "fiscal_year": "2026-27",
+          "status": "approved"
+        }
+      ],
+      "linked_spatial_project_ids": [
+        "SP-YT-01"
+      ],
+      "linked_consultation_ids": [
+        "CON-001"
+      ],
+      "locked": true,
+      "history": [
+        {
+          "at": "2025-04-01T09:00:00+08:00",
+          "event": "published",
+          "detail": "五年 80000 名青年受惠",
+          "by_org": "HAB"
+        },
+        {
+          "at": "2025-04-01T09:05:00+08:00",
+          "event": "locked",
+          "detail": "目标锁定",
+          "by_org": "HAB"
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "milestone_id": "MS-HS01-Q1",
+      "target_id": "T-HS-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 1,
+      "title": "2025年第1季度量化节点",
+      "metric_code": "HS-UNIT",
+      "metric_version": "v1",
+      "planned_value": 9800,
+      "unit": "个",
+      "due_date": "2025-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS01-Q2",
+      "target_id": "T-HS-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 2,
+      "title": "2025年第2季度量化节点",
+      "metric_code": "HS-UNIT",
+      "metric_version": "v1",
+      "planned_value": 19600,
+      "unit": "个",
+      "due_date": "2025-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS01-Q3",
+      "target_id": "T-HS-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 3,
+      "title": "2025年第3季度量化节点",
+      "metric_code": "HS-UNIT",
+      "metric_version": "v1",
+      "planned_value": 29400,
+      "unit": "个",
+      "due_date": "2025-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS01-Q4",
+      "target_id": "T-HS-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 4,
+      "title": "2026年第4季度量化节点",
+      "metric_code": "HS-UNIT",
+      "metric_version": "v1",
+      "planned_value": 39200,
+      "unit": "个",
+      "due_date": "2026-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS01-Q5",
+      "target_id": "T-HS-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 5,
+      "title": "2026年第1季度量化节点",
+      "metric_code": "HS-UNIT",
+      "metric_version": "v1",
+      "planned_value": 49000,
+      "unit": "个",
+      "due_date": "2026-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2627"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS01-Q6",
+      "target_id": "T-HS-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 6,
+      "title": "2026年第2季度量化节点",
+      "metric_code": "HS-UNIT",
+      "metric_version": "v1",
+      "planned_value": 58800,
+      "unit": "个",
+      "due_date": "2026-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2627"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS01-Q7",
+      "target_id": "T-HS-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 7,
+      "title": "2026年第3季度量化节点",
+      "metric_code": "HS-UNIT",
+      "metric_version": "v1",
+      "planned_value": 68600,
+      "unit": "个",
+      "due_date": "2026-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2728"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS01-Q8",
+      "target_id": "T-HS-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 8,
+      "title": "2027年第4季度量化节点",
+      "metric_code": "HS-UNIT",
+      "metric_version": "v1",
+      "planned_value": 78400,
+      "unit": "个",
+      "due_date": "2027-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2728"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS02-Q1",
+      "target_id": "T-HS-02",
+      "plan_id": "PLAN-2526",
+      "sequence": 1,
+      "title": "2025年第1季度量化节点",
+      "metric_code": "HS-LTM",
+      "metric_version": "v1",
+      "planned_value": 5.2,
+      "unit": "年",
+      "due_date": "2025-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS02-Q2",
+      "target_id": "T-HS-02",
+      "plan_id": "PLAN-2526",
+      "sequence": 2,
+      "title": "2025年第2季度量化节点",
+      "metric_code": "HS-LTM",
+      "metric_version": "v1",
+      "planned_value": 5.1,
+      "unit": "年",
+      "due_date": "2025-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS02-Q3",
+      "target_id": "T-HS-02",
+      "plan_id": "PLAN-2526",
+      "sequence": 3,
+      "title": "2025年第3季度量化节点",
+      "metric_code": "HS-LTM",
+      "metric_version": "v1",
+      "planned_value": 5.0,
+      "unit": "年",
+      "due_date": "2025-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS02-Q4",
+      "target_id": "T-HS-02",
+      "plan_id": "PLAN-2526",
+      "sequence": 4,
+      "title": "2026年第4季度量化节点",
+      "metric_code": "HS-LTM",
+      "metric_version": "v1",
+      "planned_value": 4.9,
+      "unit": "年",
+      "due_date": "2026-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "at_risk"
+    },
+    {
+      "milestone_id": "MS-HS02-Q5",
+      "target_id": "T-HS-02",
+      "plan_id": "PLAN-2627",
+      "sequence": 5,
+      "title": "2026年第1季度量化节点",
+      "metric_code": "HS-LTM",
+      "metric_version": "v1",
+      "planned_value": 4.8,
+      "unit": "年",
+      "due_date": "2026-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2627"
+      ],
+      "spatial_project_id": null,
+      "status": "at_risk"
+    },
+    {
+      "milestone_id": "MS-HS02-Q6",
+      "target_id": "T-HS-02",
+      "plan_id": "PLAN-2627",
+      "sequence": 6,
+      "title": "2026年第2季度量化节点",
+      "metric_code": "HS-LTM",
+      "metric_version": "v1",
+      "planned_value": 4.7,
+      "unit": "年",
+      "due_date": "2026-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2627"
+      ],
+      "spatial_project_id": null,
+      "status": "at_risk"
+    },
+    {
+      "milestone_id": "MS-HS02-Q7",
+      "target_id": "T-HS-02",
+      "plan_id": "PLAN-2728",
+      "sequence": 7,
+      "title": "2026年第3季度量化节点",
+      "metric_code": "HS-LTM",
+      "metric_version": "v1",
+      "planned_value": 4.6,
+      "unit": "年",
+      "due_date": "2026-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2728"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HS02-Q8",
+      "target_id": "T-HS-02",
+      "plan_id": "PLAN-2728",
+      "sequence": 8,
+      "title": "2027年第4季度量化节点",
+      "metric_code": "HS-LTM",
+      "metric_version": "v1",
+      "planned_value": 4.5,
+      "unit": "年",
+      "due_date": "2027-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "HD",
+      "budget_refs": [
+        "HD-PLAN-2728"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-SF01-Q1",
+      "target_id": "T-SF-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 1,
+      "title": "2025年第1季度量化节点",
+      "metric_code": "SF-PRM",
+      "metric_version": "v1",
+      "planned_value": 1000,
+      "unit": "处",
+      "due_date": "2025-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "BD",
+      "budget_refs": [
+        "BD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "at_risk"
+    },
+    {
+      "milestone_id": "MS-SF01-Q2",
+      "target_id": "T-SF-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 2,
+      "title": "2025年第2季度量化节点",
+      "metric_code": "SF-PRM",
+      "metric_version": "v1",
+      "planned_value": 2000,
+      "unit": "处",
+      "due_date": "2025-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "BD",
+      "budget_refs": [
+        "BD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "at_risk"
+    },
+    {
+      "milestone_id": "MS-SF01-Q3",
+      "target_id": "T-SF-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 3,
+      "title": "2025年第3季度量化节点",
+      "metric_code": "SF-PRM",
+      "metric_version": "v1",
+      "planned_value": 3000,
+      "unit": "处",
+      "due_date": "2025-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "BD",
+      "budget_refs": [
+        "BD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "off_track"
+    },
+    {
+      "milestone_id": "MS-SF01-Q4",
+      "target_id": "T-SF-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 4,
+      "title": "2026年第4季度量化节点",
+      "metric_code": "SF-PRM",
+      "metric_version": "v1",
+      "planned_value": 4000,
+      "unit": "处",
+      "due_date": "2026-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "BD",
+      "budget_refs": [
+        "BD-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "off_track"
+    },
+    {
+      "milestone_id": "MS-SF01-Q5",
+      "target_id": "T-SF-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 5,
+      "title": "2026年第1季度量化节点",
+      "metric_code": "SF-PRM",
+      "metric_version": "v1",
+      "planned_value": 5000,
+      "unit": "处",
+      "due_date": "2026-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "BD",
+      "budget_refs": [
+        "BD-PLAN-2627"
+      ],
+      "spatial_project_id": null,
+      "status": "off_track"
+    },
+    {
+      "milestone_id": "MS-SF01-Q6",
+      "target_id": "T-SF-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 6,
+      "title": "2026年第2季度量化节点",
+      "metric_code": "SF-PRM",
+      "metric_version": "v1",
+      "planned_value": 6000,
+      "unit": "处",
+      "due_date": "2026-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "BD",
+      "budget_refs": [
+        "BD-PLAN-2627"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-SF01-Q7",
+      "target_id": "T-SF-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 7,
+      "title": "2026年第3季度量化节点",
+      "metric_code": "SF-PRM",
+      "metric_version": "v1",
+      "planned_value": 7000,
+      "unit": "处",
+      "due_date": "2026-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "BD",
+      "budget_refs": [
+        "BD-PLAN-2728"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-SF01-Q8",
+      "target_id": "T-SF-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 8,
+      "title": "2027年第4季度量化节点",
+      "metric_code": "SF-PRM",
+      "metric_version": "v1",
+      "planned_value": 8000,
+      "unit": "处",
+      "due_date": "2027-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "BD",
+      "budget_refs": [
+        "BD-PLAN-2728"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HC01-Q1",
+      "target_id": "T-HC-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 1,
+      "title": "2025年第1季度量化节点",
+      "metric_code": "HC-BED",
+      "metric_version": "v1",
+      "planned_value": 150,
+      "unit": "张",
+      "due_date": "2025-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "HA",
+      "budget_refs": [
+        "HA-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "done"
+    },
+    {
+      "milestone_id": "MS-HC01-Q2",
+      "target_id": "T-HC-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 2,
+      "title": "2025年第2季度量化节点",
+      "metric_code": "HC-BED",
+      "metric_version": "v1",
+      "planned_value": 300,
+      "unit": "张",
+      "due_date": "2025-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "HA",
+      "budget_refs": [
+        "HA-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "done"
+    },
+    {
+      "milestone_id": "MS-HC01-Q3",
+      "target_id": "T-HC-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 3,
+      "title": "2025年第3季度量化节点",
+      "metric_code": "HC-BED",
+      "metric_version": "v1",
+      "planned_value": 450,
+      "unit": "张",
+      "due_date": "2025-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "HA",
+      "budget_refs": [
+        "HA-PLAN-2526"
+      ],
+      "spatial_project_id": "SP-HC-01",
+      "status": "done"
+    },
+    {
+      "milestone_id": "MS-HC01-Q4",
+      "target_id": "T-HC-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 4,
+      "title": "2026年第4季度量化节点",
+      "metric_code": "HC-BED",
+      "metric_version": "v1",
+      "planned_value": 600,
+      "unit": "张",
+      "due_date": "2026-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "HA",
+      "budget_refs": [
+        "HA-PLAN-2526"
+      ],
+      "spatial_project_id": "SP-HC-01",
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HC01-Q5",
+      "target_id": "T-HC-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 5,
+      "title": "2026年第1季度量化节点",
+      "metric_code": "HC-BED",
+      "metric_version": "v1",
+      "planned_value": 750,
+      "unit": "张",
+      "due_date": "2026-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "HA",
+      "budget_refs": [
+        "HA-PLAN-2627"
+      ],
+      "spatial_project_id": "SP-HC-01",
+      "status": "at_risk"
+    },
+    {
+      "milestone_id": "MS-HC01-Q6",
+      "target_id": "T-HC-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 6,
+      "title": "2026年第2季度量化节点",
+      "metric_code": "HC-BED",
+      "metric_version": "v1",
+      "planned_value": 900,
+      "unit": "张",
+      "due_date": "2026-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "HA",
+      "budget_refs": [
+        "HA-PLAN-2627"
+      ],
+      "spatial_project_id": "SP-HC-01",
+      "status": "deferred"
+    },
+    {
+      "milestone_id": "MS-HC01-Q7",
+      "target_id": "T-HC-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 7,
+      "title": "2026年第3季度量化节点",
+      "metric_code": "HC-BED",
+      "metric_version": "v1",
+      "planned_value": 1050,
+      "unit": "张",
+      "due_date": "2026-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "HA",
+      "budget_refs": [
+        "HA-PLAN-2728"
+      ],
+      "spatial_project_id": "SP-HC-01",
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-HC01-Q8",
+      "target_id": "T-HC-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 8,
+      "title": "2027年第4季度量化节点",
+      "metric_code": "HC-BED",
+      "metric_version": "v1",
+      "planned_value": 1200,
+      "unit": "张",
+      "due_date": "2027-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "HA",
+      "budget_refs": [
+        "HA-PLAN-2728"
+      ],
+      "spatial_project_id": "SP-HC-01",
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-DH01-Q1",
+      "target_id": "T-DH-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 1,
+      "title": "2025年第1季度量化节点",
+      "metric_code": "DHC-SVC",
+      "metric_version": "v1",
+      "planned_value": 50000,
+      "unit": "人次",
+      "due_date": "2025-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "DH",
+      "budget_refs": [
+        "DH-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-DH01-Q2",
+      "target_id": "T-DH-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 2,
+      "title": "2025年第2季度量化节点",
+      "metric_code": "DHC-SVC",
+      "metric_version": "v1",
+      "planned_value": 100000,
+      "unit": "人次",
+      "due_date": "2025-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "DH",
+      "budget_refs": [
+        "DH-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-DH01-Q3",
+      "target_id": "T-DH-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 3,
+      "title": "2025年第3季度量化节点",
+      "metric_code": "DHC-SVC",
+      "metric_version": "v1",
+      "planned_value": 150000,
+      "unit": "人次",
+      "due_date": "2025-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "DH",
+      "budget_refs": [
+        "DH-PLAN-2526"
+      ],
+      "spatial_project_id": "SP-DH-01",
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-DH01-Q4",
+      "target_id": "T-DH-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 4,
+      "title": "2026年第4季度量化节点",
+      "metric_code": "DHC-SVC",
+      "metric_version": "v1",
+      "planned_value": 200000,
+      "unit": "人次",
+      "due_date": "2026-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "DH",
+      "budget_refs": [
+        "DH-PLAN-2526"
+      ],
+      "spatial_project_id": "SP-DH-01",
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-DH01-Q5",
+      "target_id": "T-DH-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 5,
+      "title": "2026年第1季度量化节点",
+      "metric_code": "DHC-SVC",
+      "metric_version": "v2",
+      "planned_value": 250000,
+      "unit": "人次",
+      "due_date": "2026-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "DH",
+      "budget_refs": [
+        "DH-PLAN-2627"
+      ],
+      "spatial_project_id": "SP-DH-01",
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-DH01-Q6",
+      "target_id": "T-DH-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 6,
+      "title": "2026年第2季度量化节点",
+      "metric_code": "DHC-SVC",
+      "metric_version": "v2",
+      "planned_value": 300000,
+      "unit": "人次",
+      "due_date": "2026-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "DH",
+      "budget_refs": [
+        "DH-PLAN-2627"
+      ],
+      "spatial_project_id": "SP-DH-01",
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-DH01-Q7",
+      "target_id": "T-DH-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 7,
+      "title": "2026年第3季度量化节点",
+      "metric_code": "DHC-SVC",
+      "metric_version": "v2",
+      "planned_value": 350000,
+      "unit": "人次",
+      "due_date": "2026-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "DH",
+      "budget_refs": [
+        "DH-PLAN-2728"
+      ],
+      "spatial_project_id": "SP-DH-01",
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-DH01-Q8",
+      "target_id": "T-DH-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 8,
+      "title": "2027年第4季度量化节点",
+      "metric_code": "DHC-SVC",
+      "metric_version": "v2",
+      "planned_value": 400000,
+      "unit": "人次",
+      "due_date": "2027-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "DH",
+      "budget_refs": [
+        "DH-PLAN-2728"
+      ],
+      "spatial_project_id": "SP-DH-01",
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-YT01-Q1",
+      "target_id": "T-YT-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 1,
+      "title": "2025年第1季度量化节点",
+      "metric_code": "YTH-CNT",
+      "metric_version": "v1",
+      "planned_value": 4000,
+      "unit": "人",
+      "due_date": "2025-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "HAB",
+      "budget_refs": [
+        "HAB-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "done"
+    },
+    {
+      "milestone_id": "MS-YT01-Q2",
+      "target_id": "T-YT-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 2,
+      "title": "2025年第2季度量化节点",
+      "metric_code": "YTH-CNT",
+      "metric_version": "v1",
+      "planned_value": 8000,
+      "unit": "人",
+      "due_date": "2025-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "HAB",
+      "budget_refs": [
+        "HAB-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "done"
+    },
+    {
+      "milestone_id": "MS-YT01-Q3",
+      "target_id": "T-YT-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 3,
+      "title": "2025年第3季度量化节点",
+      "metric_code": "YTH-CNT",
+      "metric_version": "v1",
+      "planned_value": 12000,
+      "unit": "人",
+      "due_date": "2025-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "HAB",
+      "budget_refs": [
+        "HAB-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "done"
+    },
+    {
+      "milestone_id": "MS-YT01-Q4",
+      "target_id": "T-YT-01",
+      "plan_id": "PLAN-2526",
+      "sequence": 4,
+      "title": "2026年第4季度量化节点",
+      "metric_code": "YTH-CNT",
+      "metric_version": "v1",
+      "planned_value": 16000,
+      "unit": "人",
+      "due_date": "2026-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "HAB",
+      "budget_refs": [
+        "HAB-PLAN-2526"
+      ],
+      "spatial_project_id": null,
+      "status": "done"
+    },
+    {
+      "milestone_id": "MS-YT01-Q5",
+      "target_id": "T-YT-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 5,
+      "title": "2026年第1季度量化节点",
+      "metric_code": "YTH-CNT",
+      "metric_version": "v1",
+      "planned_value": 20000,
+      "unit": "人",
+      "due_date": "2026-06-30",
+      "forecast_date": null,
+      "responsible_org_code": "HAB",
+      "budget_refs": [
+        "HAB-PLAN-2627"
+      ],
+      "spatial_project_id": null,
+      "status": "done"
+    },
+    {
+      "milestone_id": "MS-YT01-Q6",
+      "target_id": "T-YT-01",
+      "plan_id": "PLAN-2627",
+      "sequence": 6,
+      "title": "2026年第2季度量化节点",
+      "metric_code": "YTH-CNT",
+      "metric_version": "v1",
+      "planned_value": 24000,
+      "unit": "人",
+      "due_date": "2026-09-30",
+      "forecast_date": null,
+      "responsible_org_code": "HAB",
+      "budget_refs": [
+        "HAB-PLAN-2627"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-YT01-Q7",
+      "target_id": "T-YT-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 7,
+      "title": "2026年第3季度量化节点",
+      "metric_code": "YTH-CNT",
+      "metric_version": "v1",
+      "planned_value": 28000,
+      "unit": "人",
+      "due_date": "2026-12-31",
+      "forecast_date": null,
+      "responsible_org_code": "HAB",
+      "budget_refs": [
+        "HAB-PLAN-2728"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    },
+    {
+      "milestone_id": "MS-YT01-Q8",
+      "target_id": "T-YT-01",
+      "plan_id": "PLAN-2728",
+      "sequence": 8,
+      "title": "2027年第4季度量化节点",
+      "metric_code": "YTH-CNT",
+      "metric_version": "v1",
+      "planned_value": 32000,
+      "unit": "人",
+      "due_date": "2027-03-31",
+      "forecast_date": null,
+      "responsible_org_code": "HAB",
+      "budget_refs": [
+        "HAB-PLAN-2728"
+      ],
+      "spatial_project_id": null,
+      "status": "on_track"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EV-HS01-Q1",
+      "milestone_id": "MS-HS01-Q1",
+      "observed_value": 9600,
+      "metric_version": "v1",
+      "recorded_at": "2025-06-30T18:00:00+08:00",
+      "received_at": "2025-07-20T10:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-UNIT-2026Q1-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "105320c64cbc918d8a13f58d84c36b49604ce986f71179f95d705aa36af28e13"
+    },
+    {
+      "evidence_id": "EV-HS01-Q2",
+      "milestone_id": "MS-HS01-Q2",
+      "observed_value": 19400,
+      "metric_version": "v1",
+      "recorded_at": "2025-09-30T18:00:00+08:00",
+      "received_at": "2025-10-20T10:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-UNIT-2026Q2-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "42a11c35017e1cf94d7ba819e3606b17724dff38a29ae0bcee5d93439803d06f"
+    },
+    {
+      "evidence_id": "EV-HS01-Q3",
+      "milestone_id": "MS-HS01-Q3",
+      "observed_value": 29100,
+      "metric_version": "v1",
+      "recorded_at": "2025-12-31T18:00:00+08:00",
+      "received_at": "2026-01-20T10:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-UNIT-2026Q3-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "0a119d68de86f1e68a345ae12bfa6b4016eed24cdcf89a6e89c6b66abb4208f9"
+    },
+    {
+      "evidence_id": "EV-HS01-Q4",
+      "milestone_id": "MS-HS01-Q4",
+      "observed_value": 39300,
+      "metric_version": "v1",
+      "recorded_at": "2026-03-31T18:00:00+08:00",
+      "received_at": "2026-04-20T10:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-UNIT-2026Q4-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "759a811f9113fe8dfeb9e52acb80df5b9573d2d4a96d49a70108b13699891aeb"
+    },
+    {
+      "evidence_id": "EV-HS01-Q5",
+      "milestone_id": "MS-HS01-Q5",
+      "observed_value": 48500,
+      "metric_version": "v1",
+      "recorded_at": "2026-06-30T18:00:00+08:00",
+      "received_at": "2026-09-12T09:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-UNIT-2026Q5-样例",
+      "confidence": "provisional",
+      "coverage": 0.85,
+      "is_late": true,
+      "note": "房屋署季度落成数字延误，余约 15% 项目资料待补，暂以初步数字汇报",
+      "sha256": "6feb20f659d38f41fc9e7a231c1cb94b0fb518b33e66e9ce0e57696c506fb1c3"
+    },
+    {
+      "evidence_id": "EV-HS02-Q1",
+      "milestone_id": "MS-HS02-Q1",
+      "observed_value": 5.2,
+      "metric_version": "v1",
+      "recorded_at": "2025-06-30T18:00:00+08:00",
+      "received_at": "2025-07-20T10:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-LTM-2026Q1-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "75ddf088396df104f60faf4eae8965788e62e98a212fa0f420b620969bc846e0"
+    },
+    {
+      "evidence_id": "EV-HS02-Q2",
+      "milestone_id": "MS-HS02-Q2",
+      "observed_value": 5.05,
+      "metric_version": "v1",
+      "recorded_at": "2025-09-30T18:00:00+08:00",
+      "received_at": "2025-10-20T10:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-LTM-2026Q2-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "baa3207e337506bea47e9f8564f98936f478ea5586ee09e383c4ceb533c301e2"
+    },
+    {
+      "evidence_id": "EV-HS02-Q3",
+      "milestone_id": "MS-HS02-Q3",
+      "observed_value": 5.05,
+      "metric_version": "v1",
+      "recorded_at": "2025-12-31T18:00:00+08:00",
+      "received_at": "2026-01-20T10:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-LTM-2026Q3-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "9a6a256e6ad457fa76b0560c452ea965b4420849ce1c87e8fd46b90c83061613"
+    },
+    {
+      "evidence_id": "EV-HS02-Q4",
+      "milestone_id": "MS-HS02-Q4",
+      "observed_value": 4.95,
+      "metric_version": "v1",
+      "recorded_at": "2026-03-31T18:00:00+08:00",
+      "received_at": "2026-04-20T10:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-LTM-2026Q4-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "802e49c54237eb2929d5e1d8913bd210ab3d8e43c4b84464efbac4fd2f0c360d"
+    },
+    {
+      "evidence_id": "EV-HS02-Q5",
+      "milestone_id": "MS-HS02-Q5",
+      "observed_value": 4.9,
+      "metric_version": "v1",
+      "recorded_at": "2026-06-30T18:00:00+08:00",
+      "received_at": "2026-07-20T10:00:00+08:00",
+      "source_org_code": "HD",
+      "source_ref": "RPT-HS-LTM-2026Q5-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "2e12522e2b8c24337fb6c5051f02efb4310938c1f88126c22c9ff66717c55e40"
+    },
+    {
+      "evidence_id": "EV-SF01-Q1",
+      "milestone_id": "MS-SF01-Q1",
+      "observed_value": 900,
+      "metric_version": "v1",
+      "recorded_at": "2025-06-30T18:00:00+08:00",
+      "received_at": "2025-07-20T10:00:00+08:00",
+      "source_org_code": "BD",
+      "source_ref": "RPT-SF-PRM-2026Q1-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "7999358dfaa5e0b033a01a1badf64c4e8f2ea15b558ee463f7126b6a49a39b7e"
+    },
+    {
+      "evidence_id": "EV-SF01-Q2",
+      "milestone_id": "MS-SF01-Q2",
+      "observed_value": 1700,
+      "metric_version": "v1",
+      "recorded_at": "2025-09-30T18:00:00+08:00",
+      "received_at": "2025-10-20T10:00:00+08:00",
+      "source_org_code": "BD",
+      "source_ref": "RPT-SF-PRM-2026Q2-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "18f4371b407242f7506794c1a7b68656fa8289cfc9420d961316997851661c9e"
+    },
+    {
+      "evidence_id": "EV-SF01-Q3",
+      "milestone_id": "MS-SF01-Q3",
+      "observed_value": 2400,
+      "metric_version": "v1",
+      "recorded_at": "2025-12-31T18:00:00+08:00",
+      "received_at": "2026-01-20T10:00:00+08:00",
+      "source_org_code": "BD",
+      "source_ref": "RPT-SF-PRM-2026Q3-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "27e63dc149d85d1e8a1aff51854677d5e340750ca8474fde1866935a4c0910d7"
+    },
+    {
+      "evidence_id": "EV-SF01-Q4",
+      "milestone_id": "MS-SF01-Q4",
+      "observed_value": 3000,
+      "metric_version": "v1",
+      "recorded_at": "2026-03-31T18:00:00+08:00",
+      "received_at": "2026-04-20T10:00:00+08:00",
+      "source_org_code": "BD",
+      "source_ref": "RPT-SF-PRM-2026Q4-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "74fb4fea03ba295f2b5cd1e93bb565b883df33d7310ec25f5d89fe016b6bd0a0"
+    },
+    {
+      "evidence_id": "EV-SF01-Q5",
+      "milestone_id": "MS-SF01-Q5",
+      "observed_value": 0,
+      "metric_version": "v1",
+      "recorded_at": "2026-06-30T18:00:00+08:00",
+      "received_at": null,
+      "source_org_code": "BD",
+      "source_ref": "RPT-SF-PRM-PENDING-样例",
+      "confidence": "estimated",
+      "coverage": 0.0,
+      "is_late": true,
+      "note": "屋宇署巡查与执法记录尚未送达，当前无可用实测",
+      "sha256": "299f6464bb50e46945b1b77bc04702972ac59d04cd5d24e191a33299cf74e9d8"
+    },
+    {
+      "evidence_id": "EV-HC01-Q1",
+      "milestone_id": "MS-HC01-Q1",
+      "observed_value": 150,
+      "metric_version": "v1",
+      "recorded_at": "2025-06-30T18:00:00+08:00",
+      "received_at": "2025-07-20T10:00:00+08:00",
+      "source_org_code": "HA",
+      "source_ref": "RPT-HC-BED-2026Q1-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "7c6e760dfb647f77864e9f9e6dda861026c5458ba023d5826f347c4f384fa9cf"
+    },
+    {
+      "evidence_id": "EV-HC01-Q2",
+      "milestone_id": "MS-HC01-Q2",
+      "observed_value": 300,
+      "metric_version": "v1",
+      "recorded_at": "2025-09-30T18:00:00+08:00",
+      "received_at": "2025-10-20T10:00:00+08:00",
+      "source_org_code": "HA",
+      "source_ref": "RPT-HC-BED-2026Q2-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "2fdec3984ffcf7757f2b1da137488ff3f67d5568480923b81a3dc26a81a24a69"
+    },
+    {
+      "evidence_id": "EV-HC01-Q3",
+      "milestone_id": "MS-HC01-Q3",
+      "observed_value": 460,
+      "metric_version": "v1",
+      "recorded_at": "2025-12-31T18:00:00+08:00",
+      "received_at": "2026-01-20T10:00:00+08:00",
+      "source_org_code": "HA",
+      "source_ref": "RPT-HC-BED-2026Q3-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "1f31cc931b3e95cfaf76db2d0f1b4a90d38161478bbbedfc6328baeb8a9919b7"
+    },
+    {
+      "evidence_id": "EV-HC01-Q4",
+      "milestone_id": "MS-HC01-Q4",
+      "observed_value": 610,
+      "metric_version": "v1",
+      "recorded_at": "2026-03-31T18:00:00+08:00",
+      "received_at": "2026-04-20T10:00:00+08:00",
+      "source_org_code": "HA",
+      "source_ref": "RPT-HC-BED-2026Q4-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "a11dc77eadbb3bbe210f0bffdf7159736788ee807357396da8b0022b47d81feb"
+    },
+    {
+      "evidence_id": "EV-HC01-Q5",
+      "milestone_id": "MS-HC01-Q5",
+      "observed_value": 700,
+      "metric_version": "v1",
+      "recorded_at": "2026-06-30T18:00:00+08:00",
+      "received_at": "2026-07-20T10:00:00+08:00",
+      "source_org_code": "HA",
+      "source_ref": "RPT-HC-BED-2026Q5-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "13d3fa2ccee588cb3c6424526c769cc43542ea3a2c16b0b0665c10cbcaea702e"
+    },
+    {
+      "evidence_id": "EV-DH01-Q1",
+      "milestone_id": "MS-DH01-Q1",
+      "observed_value": 48000,
+      "metric_version": "v1",
+      "recorded_at": "2025-06-30T18:00:00+08:00",
+      "received_at": "2025-07-20T10:00:00+08:00",
+      "source_org_code": "DH",
+      "source_ref": "RPT-DHC-SVC-2026Q1-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "5129eaf828951ff74f580c84230b7eb98fc866f2eb31068343e3e73034e24eea"
+    },
+    {
+      "evidence_id": "EV-DH01-Q2",
+      "milestone_id": "MS-DH01-Q2",
+      "observed_value": 97000,
+      "metric_version": "v1",
+      "recorded_at": "2025-09-30T18:00:00+08:00",
+      "received_at": "2025-10-20T10:00:00+08:00",
+      "source_org_code": "DH",
+      "source_ref": "RPT-DHC-SVC-2026Q2-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "cb1484291d47474833b61eb9803363979d56d10ccff33c3f3decb8e187d03376"
+    },
+    {
+      "evidence_id": "EV-DH01-Q3",
+      "milestone_id": "MS-DH01-Q3",
+      "observed_value": 146000,
+      "metric_version": "v1",
+      "recorded_at": "2025-12-31T18:00:00+08:00",
+      "received_at": "2026-01-20T10:00:00+08:00",
+      "source_org_code": "DH",
+      "source_ref": "RPT-DHC-SVC-2026Q3-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "f8b4409833cbdc4021bd21ecf7e0a0e584041c069aa6f4e7d285327736d07e74"
+    },
+    {
+      "evidence_id": "EV-DH01-Q4",
+      "milestone_id": "MS-DH01-Q4",
+      "observed_value": 196000,
+      "metric_version": "v1",
+      "recorded_at": "2026-03-31T18:00:00+08:00",
+      "received_at": "2026-04-20T10:00:00+08:00",
+      "source_org_code": "DH",
+      "source_ref": "RPT-DHC-SVC-2026Q4-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "a433dc19ad0b1d0caa92ddb0f264ff231a8bb3ac58105c985243096812abfa98"
+    },
+    {
+      "evidence_id": "EV-DH01-Q5",
+      "milestone_id": "MS-DH01-Q5",
+      "observed_value": 251000,
+      "metric_version": "v2",
+      "recorded_at": "2026-06-30T18:00:00+08:00",
+      "received_at": "2026-07-20T10:00:00+08:00",
+      "source_org_code": "DH",
+      "source_ref": "RPT-DHC-SVC-2026Q5-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "7c3efe88c39cd8ebfd40050680d94abb2e6a57e0c9cc69e983dfbc2b02e54ca8"
+    },
+    {
+      "evidence_id": "EV-YT01-Q1",
+      "milestone_id": "MS-YT01-Q1",
+      "observed_value": 4100,
+      "metric_version": "v1",
+      "recorded_at": "2025-06-30T18:00:00+08:00",
+      "received_at": "2025-07-20T10:00:00+08:00",
+      "source_org_code": "HAB",
+      "source_ref": "RPT-YTH-CNT-2026Q1-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "f9ae44970a19b329bfd075f62be656dd5290be62081cd8d7bf281b57f8f2ce7f"
+    },
+    {
+      "evidence_id": "EV-YT01-Q2",
+      "milestone_id": "MS-YT01-Q2",
+      "observed_value": 8200,
+      "metric_version": "v1",
+      "recorded_at": "2025-09-30T18:00:00+08:00",
+      "received_at": "2025-10-20T10:00:00+08:00",
+      "source_org_code": "HAB",
+      "source_ref": "RPT-YTH-CNT-2026Q2-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "7fa7775e201b2e4fb9e0a59c5da08f51d7acdb3ecba6a58f835156bf034491df"
+    },
+    {
+      "evidence_id": "EV-YT01-Q3",
+      "milestone_id": "MS-YT01-Q3",
+      "observed_value": 12400,
+      "metric_version": "v1",
+      "recorded_at": "2025-12-31T18:00:00+08:00",
+      "received_at": "2026-01-20T10:00:00+08:00",
+      "source_org_code": "HAB",
+      "source_ref": "RPT-YTH-CNT-2026Q3-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "6ff9e7ae3a0e78e05d81848730c63a6ad20af7934da12e0933beda2bdd1fbaaa"
+    },
+    {
+      "evidence_id": "EV-YT01-Q4",
+      "milestone_id": "MS-YT01-Q4",
+      "observed_value": 16800,
+      "metric_version": "v1",
+      "recorded_at": "2026-03-31T18:00:00+08:00",
+      "received_at": "2026-04-20T10:00:00+08:00",
+      "source_org_code": "HAB",
+      "source_ref": "RPT-YTH-CNT-2026Q4-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "91c57cc09c764f7379c5483755e4e93e4ded572489151ddd4a25047ac7dbd89d"
+    },
+    {
+      "evidence_id": "EV-YT01-Q5",
+      "milestone_id": "MS-YT01-Q5",
+      "observed_value": 20900,
+      "metric_version": "v1",
+      "recorded_at": "2026-06-30T18:00:00+08:00",
+      "received_at": "2026-07-20T10:00:00+08:00",
+      "source_org_code": "HAB",
+      "source_ref": "RPT-YTH-CNT-2026Q5-样例",
+      "confidence": "confirmed",
+      "coverage": 1.0,
+      "is_late": false,
+      "sha256": "7f7b8878036a0e873790df2577da6aae182462cd87586be1014654e29cbef271"
+    }
+  ],
+  "plans": [
+    {
+      "plan_id": "PLAN-2526",
+      "fiscal_year": "2025-26",
+      "title": "2025-26 年度施政方案（样例）",
+      "published_at": "2025-02-26",
+      "status": "published",
+      "consultation_ids": [
+        "CON-001"
+      ]
+    },
+    {
+      "plan_id": "PLAN-2627",
+      "fiscal_year": "2026-27",
+      "title": "2026-27 年度施政方案（样例）",
+      "published_at": "2026-02-25",
+      "status": "published",
+      "consultation_ids": [
+        "CON-002",
+        "CON-003"
+      ]
+    },
+    {
+      "plan_id": "PLAN-2728",
+      "fiscal_year": "2027-28",
+      "title": "2027-28 年度施政方案（草拟咨询，样例）",
+      "published_at": "2026-09-10",
+      "status": "consultation",
+      "consultation_ids": []
+    }
+  ],
+  "revisions": [
+    {
+      "revision_id": "REV-001",
+      "at": "2026-08-20T11:00:00+08:00",
+      "plan_id": "PLAN-2627",
+      "target_id": "T-HS-02",
+      "milestone_id": "MS-HS02-Q6",
+      "kind": "reschedule",
+      "touches_five_year_target": false,
+      "reason": "建造业人力紧张与个别用地交收滞后，2026 年第三季节点预测由 9 月底顺延约 11 周；已加推组装合成法合约与补地价加快安排，五年末降至 3.0 年的目标不变。",
+      "evidence_ids": [
+        "EV-HS02-Q5"
+      ],
+      "by_org": "HB",
+      "decided_by": "年度方案跨部门会议通过并公开",
+      "old": {
+        "due_date": "2026-09-30",
+        "forecast_date": null
+      },
+      "new": {
+        "due_date": "2026-09-30",
+        "forecast_date": "2026-12-15"
+      }
+    },
+    {
+      "revision_id": "REV-002",
+      "at": "2026-08-05T10:30:00+08:00",
+      "plan_id": "PLAN-2627",
+      "target_id": "T-SF-01",
+      "milestone_id": "MS-SF01-Q5",
+      "kind": "path_change",
+      "touches_five_year_target": false,
+      "reason": "首年合规进度落后：旧楼业主维修需时、复核程序排期长。2026-27 年度方案增拨 1.2 亿港元，加设屋宇署/食环署联合专责小组，在观塘试行「一站式合规支援」，五年治理 20000 处的目标不变。",
+      "evidence_ids": [
+        "EV-SF01-Q4"
+      ],
+      "by_org": "HB",
+      "decided_by": "年度方案修订经立法会事务委员会简报后公开",
+      "old": {
+        "teams": 4,
+        "annual_budget_hkd_million": 180
+      },
+      "new": {
+        "teams": 9,
+        "annual_budget_hkd_million": 300,
+        "pilot_district": "观塘"
+      }
+    },
+    {
+      "revision_id": "REV-003",
+      "at": "2026-09-02T16:00:00+08:00",
+      "plan_id": "PLAN-2627",
+      "target_id": "T-HC-01",
+      "milestone_id": "MS-HC01-Q6",
+      "kind": "reschedule",
+      "touches_five_year_target": false,
+      "reason": "东区分院大楼机电工程因主要承建商重组需重新招标，第三季 150 张病床节点顺延至 2027 年 1 月；医管局已按合约追讨档期损失，五年净增 3000 张病床目标不变。",
+      "evidence_ids": [
+        "EV-HC01-Q5"
+      ],
+      "by_org": "HHB",
+      "decided_by": "医管局董事局工程委员会核准并公开",
+      "old": {
+        "due_date": "2026-09-30",
+        "forecast_date": null
+      },
+      "new": {
+        "due_date": "2026-09-30",
+        "forecast_date": "2027-01-31"
+      }
+    },
+    {
+      "revision_id": "REV-004",
+      "at": "2026-04-01T00:00:00+08:00",
+      "plan_id": "PLAN-2627",
+      "target_id": "T-DH-01",
+      "milestone_id": "MS-DH01-Q5",
+      "kind": "metric_rebaseline",
+      "touches_five_year_target": true,
+      "reason": "v1「登记会员人数」未能反映实际服务量，自 2026-04-01 起改用 v2「累计接受评估或服务人次」；经平行统计三个月验证换算系数 1.25，历史值已按桥接 BR-DHC-01 重述，五年目标 v1 等效值维持 800000。",
+      "evidence_ids": [
+        "EV-DH01-Q4"
+      ],
+      "by_org": "HHB",
+      "decided_by": "统计口径变更经审计协作组登记并随方案公开",
+      "old": {
+        "metric_version": "v1",
+        "metric_name": "登记会员人数"
+      },
+      "new": {
+        "metric_version": "v2",
+        "metric_name": "累计接受评估或服务人次",
+        "bridge_id": "BR-DHC-01"
+      }
+    }
+  ],
+  "metric_bridges": [
+    {
+      "bridge_id": "BR-DHC-01",
+      "metric_code": "DHC-SVC",
+      "from_version": "v1",
+      "to_version": "v2",
+      "effective_at": "2026-04-01",
+      "method": "factor",
+      "factor": 1.25,
+      "additive": null,
+      "restated_from_values": {
+        "2025-06-30": 60000,
+        "2025-09-30": 121250,
+        "2025-12-31": 182500,
+        "2026-03-31": 245000
+      },
+      "rationale": "v2 覆盖健康评估、慢性护理及复康服务人次；三个月平行统计对 v1 的平均比率为 1.25。"
+    }
+  ],
+  "data_notices": [
+    {
+      "notice_id": "NTC-001",
+      "target_id": "T-HS-01",
+      "org_code": "HD",
+      "expected_by": "2026-07-31T12:00:00+08:00",
+      "received_at": "2026-09-12T09:00:00+08:00",
+      "severity": "recovered",
+      "impact": "2026 年第二季落成数字延误 43 日；送达前相关判定以 provisional、覆盖率 0.85 显示。"
+    },
+    {
+      "notice_id": "NTC-002",
+      "target_id": "T-SF-01",
+      "org_code": "BD",
+      "expected_by": "2026-09-15T12:00:00+08:00",
+      "received_at": null,
+      "severity": "delayed",
+      "impact": "屋宇署 2026 年第二季巡查与执法记录尚未送达；劏房治理当前进度无实测，按低置信显示。"
+    }
+  ],
+  "spatial_projects": [
+    {
+      "spatial_project_id": "SP-HS-01",
+      "name": "东涌新市镇扩展公屋发展（样例）",
+      "project_type": "housing_development",
+      "district": "离岛",
+      "site_public": true,
+      "granularity": "site",
+      "site_location_classified": null,
+      "status": "works",
+      "linked_target_ids": [
+        "T-HS-01",
+        "T-HS-02"
+      ]
+    },
+    {
+      "spatial_project_id": "SP-HS-02",
+      "name": "北区新增公屋用地（代号，样例）",
+      "project_type": "housing_development",
+      "district": "北区",
+      "site_public": false,
+      "granularity": "district_only",
+      "site_location_classified": "LOT-NTM-SECRET-0124（样例，严禁外泄）",
+      "status": "planning",
+      "linked_target_ids": [
+        "T-HS-01"
+      ]
+    },
+    {
+      "spatial_project_id": "SP-HC-01",
+      "name": "东区分院扩建大楼（样例）",
+      "project_type": "healthcare_facility",
+      "district": "东区",
+      "site_public": true,
+      "granularity": "site",
+      "site_location_classified": null,
+      "status": "works",
+      "linked_target_ids": [
+        "T-HC-01"
+      ]
+    },
+    {
+      "spatial_project_id": "SP-HC-02",
+      "name": "新界西北医院新大楼（代号，样例）",
+      "project_type": "healthcare_facility",
+      "district": "元朗",
+      "site_public": false,
+      "granularity": "district_only",
+      "site_location_classified": "SITE-YL-SECRET-0077（样例，严禁外泄）",
+      "status": "planning",
+      "linked_target_ids": [
+        "T-HC-01"
+      ]
+    },
+    {
+      "spatial_project_id": "SP-DH-01",
+      "name": "深水埗地区康健中心（样例）",
+      "project_type": "dchc",
+      "district": "深水埗",
+      "site_public": true,
+      "granularity": "site",
+      "site_location_classified": null,
+      "status": "completed",
+      "linked_target_ids": [
+        "T-DH-01"
+      ]
+    },
+    {
+      "spatial_project_id": "SP-YT-01",
+      "name": "青年共享空间试验点（样例）",
+      "project_type": "youth_space",
+      "district": "油尖旺",
+      "site_public": true,
+      "granularity": "site",
+      "site_location_classified": null,
+      "status": "works",
+      "linked_target_ids": [
+        "T-YT-01"
+      ]
+    }
+  ],
+  "consultations": [
+    {
+      "consultation_id": "CON-001",
+      "title": "五年民生规划公众咨询（样例）",
+      "period_start": "2025-01-08",
+      "period_end": "2025-03-31",
+      "submissions_total": 17234,
+      "themes": [
+        {
+          "theme": "加快公屋落成、缩短轮候",
+          "count": 8412,
+          "disposition": "adopted",
+          "response_summary": "纳入 T-HS-01/02 量化路径，按季公开节点。"
+        },
+        {
+          "theme": "加强劣质劏房治理与安置配套",
+          "count": 5603,
+          "disposition": "partly_adopted",
+          "response_summary": "强制登记与联合执法纳入 T-SF-01；过渡性安置供应受场地限制需分年推进。"
+        },
+        {
+          "theme": "基层医疗可及性与地区康健中心",
+          "count": 2110,
+          "disposition": "adopted",
+          "response_summary": "康健中心网络扩展与服务人次口径优化纳入 T-DH-01。"
+        },
+        {
+          "theme": "青年就业、实习与住屋支援",
+          "count": 1109,
+          "disposition": "partly_adopted",
+          "response_summary": "纳入 T-YT-01；宿舍名额按可用物业逐年增加。"
+        }
+      ],
+      "linked_target_ids": [
+        "T-HS-01",
+        "T-HS-02",
+        "T-SF-01",
+        "T-HC-01",
+        "T-DH-01",
+        "T-YT-01"
+      ]
+    },
+    {
+      "consultation_id": "CON-002",
+      "title": "不合标准处所规管制度咨询（样例）",
+      "period_start": "2025-09-01",
+      "period_end": "2025-11-30",
+      "submissions_total": 3108,
+      "themes": [
+        {
+          "theme": "整改资助与技术支援",
+          "count": 1420,
+          "disposition": "adopted",
+          "response_summary": "REV-002 增拨资源并设观塘一站式试点。"
+        },
+        {
+          "theme": "执法时限与上诉安排",
+          "count": 980,
+          "disposition": "partly_adopted",
+          "response_summary": "承诺复核时限公开，上诉机制维持现行法定程序。"
+        }
+      ],
+      "linked_target_ids": [
+        "T-SF-01"
+      ]
+    },
+    {
+      "consultation_id": "CON-003",
+      "title": "地区康健中心网络扩展地区咨询（样例）",
+      "period_start": "2026-02-02",
+      "period_end": "2026-03-15",
+      "submissions_total": 862,
+      "themes": [
+        {
+          "theme": "夜间及周末服务",
+          "count": 433,
+          "disposition": "adopted",
+          "response_summary": "新签约中心须提供最少两晚晚间服务。"
+        }
+      ],
+      "linked_target_ids": [
+        "T-DH-01"
+      ]
+    }
+  ]
+}

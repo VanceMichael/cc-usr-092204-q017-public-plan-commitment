@@ -1,0 +1,454 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.gov.hk/schemas/pledge-domain.schema.json",
+  "title": "民生规划承诺兑现领域包",
+  "description": "连接五年规划目标、年度施政方案、空间项目、公众咨询与公开进度证据的交换包。年度方案可调整实现路径，但不得改写五年目标；统计口径变化须保留可比桥接。",
+  "type": "object",
+  "required": [
+    "package_id",
+    "generated_at",
+    "rules_version",
+    "targets",
+    "milestones",
+    "evidence",
+    "plans",
+    "revisions",
+    "metric_bridges",
+    "data_notices",
+    "spatial_projects",
+    "consultations"
+  ],
+  "properties": {
+    "package_id": { "type": "string", "description": "领域包版本编号" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "rules_version": { "type": "string", "description": "判定规则版本，判定结果须可据此重现" },
+    "targets": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/target" }
+    },
+    "milestones": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/milestone" }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/evidence_snapshot" }
+    },
+    "plans": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/annual_plan" }
+    },
+    "revisions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/revision" }
+    },
+    "metric_bridges": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/metric_bridge" }
+    },
+    "data_notices": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/data_notice" }
+    },
+    "spatial_projects": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/spatial_project" }
+    },
+    "consultations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/consultation" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "money": {
+      "type": "object",
+      "description": "预算条目",
+      "required": ["amount_hkd_million", "fiscal_year", "status"],
+      "properties": {
+        "amount_hkd_million": { "type": "number" },
+        "fiscal_year": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["approved", "revised", "spent", "projected"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "responsible_org": {
+      "type": "object",
+      "required": ["org_code", "name", "role"],
+      "properties": {
+        "org_code": { "type": "string", "description": "责任机构代码，如 HB、HD、THB、DH、HA、HAB" },
+        "name": { "type": "string" },
+        "role": { "type": "string", "enum": ["lead", "supporting"] }
+      },
+      "additionalProperties": false
+    },
+    "target": {
+      "type": "object",
+      "description": "五年规划量化目标。目标值锁定，年度方案只能调整实现路径。",
+      "required": [
+        "target_id",
+        "domain",
+        "title",
+        "metric_code",
+        "metric_name",
+        "direction",
+        "baseline",
+        "target_value",
+        "unit",
+        "period_start",
+        "period_end",
+        "responsible_orgs",
+        "budget",
+        "linked_spatial_project_ids",
+        "linked_consultation_ids",
+        "locked",
+        "history"
+      ],
+      "properties": {
+        "target_id": { "type": "string" },
+        "domain": {
+          "type": "string",
+          "enum": ["public_housing", "subdivided_flats", "healthcare_beds", "district_health", "youth", "other"]
+        },
+        "title": { "type": "string" },
+        "metric_code": { "type": "string", "description": "指标代码，口径版本另存于 metric_bridges" },
+        "metric_name": { "type": "string" },
+        "direction": { "type": "string", "enum": ["maximize", "minimize"], "description": "越大越好或越小越好" },
+        "baseline": {
+          "type": "object",
+          "required": ["value", "as_of", "metric_version"],
+          "properties": {
+            "value": { "type": "number" },
+            "as_of": { "type": "string", "format": "date" },
+            "metric_version": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "target_value": { "type": "number", "description": "五年末锁定目标值（按首发口径）" },
+        "unit": { "type": "string" },
+        "period_start": { "type": "string", "format": "date" },
+        "period_end": { "type": "string", "format": "date" },
+        "responsible_orgs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/responsible_org" }
+        },
+        "budget": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/money" }
+        },
+        "linked_spatial_project_ids": { "type": "array", "items": { "type": "string" } },
+        "linked_consultation_ids": { "type": "array", "items": { "type": "string" } },
+        "locked": { "type": "boolean", "description": "五年目标是否已锁定（锁定后年度方案不得改写）" },
+        "history": {
+          "type": "array",
+          "description": "目标定义的不可变修订流水；锁定后追加 rewrite 尝试必须被拒绝并留痕",
+          "items": { "$ref": "#/$defs/target_history_entry" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "target_history_entry": {
+      "type": "object",
+      "required": ["at", "event", "detail"],
+      "properties": {
+        "at": { "type": "string", "format": "date-time" },
+        "event": {
+          "type": "string",
+          "enum": ["published", "clarified", "locked", "rewrite_rejected"]
+        },
+        "detail": { "type": "string" },
+        "by_org": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "milestone": {
+      "type": "object",
+      "description": "可量化节点：关联目标、年度方案、预算、空间项目与计划/预测完成日期。",
+      "required": [
+        "milestone_id",
+        "target_id",
+        "plan_id",
+        "sequence",
+        "title",
+        "metric_code",
+        "metric_version",
+        "planned_value",
+        "unit",
+        "due_date",
+        "forecast_date",
+        "responsible_org_code",
+        "budget_refs",
+        "spatial_project_id",
+        "status"
+      ],
+      "properties": {
+        "milestone_id": { "type": "string" },
+        "target_id": { "type": "string" },
+        "plan_id": { "type": "string", "description": "所属年度施政方案" },
+        "sequence": { "type": "integer", "minimum": 1 },
+        "title": { "type": "string" },
+        "metric_code": { "type": "string" },
+        "metric_version": { "type": "string", "description": "本节点承诺口径；跨版本比较须经 metric_bridges 换算" },
+        "planned_value": { "type": "number" },
+        "unit": { "type": "string" },
+        "due_date": { "type": "string", "format": "date", "description": "计划完成日期" },
+        "forecast_date": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "最近预测完成日期；晚于 due_date 即延期信号"
+        },
+        "responsible_org_code": { "type": "string" },
+        "budget_refs": { "type": "array", "items": { "type": "string" } },
+        "spatial_project_id": { "type": ["string", "null"] },
+        "status": {
+          "type": "string",
+          "enum": ["on_track", "at_risk", "off_track", "done", "deferred"],
+          "description": "机构自报状态；对外判定以规则引擎结合证据重算为准"
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_snapshot": {
+      "type": "object",
+      "title": "evidence_snapshot",
+      "description": "证据快照：某时点某节点的观测值及其来源、口径、迟到标记与完整性哈希。",
+      "required": [
+        "evidence_id",
+        "milestone_id",
+        "observed_value",
+        "metric_version",
+        "recorded_at",
+        "received_at",
+        "source_org_code",
+        "source_ref",
+        "confidence",
+        "coverage",
+        "is_late",
+        "sha256"
+      ],
+      "properties": {
+        "evidence_id": { "type": "string" },
+        "milestone_id": { "type": "string" },
+        "observed_value": { "type": "number" },
+        "metric_version": { "type": "string" },
+        "recorded_at": { "type": "string", "format": "date-time", "description": "数据所属统计时点" },
+        "received_at": { "type": ["string", "null"], "format": "date-time", "description": "系统收到跨部门数据的时点；晚于宽限即迟到；未送达为 null" },
+        "source_org_code": { "type": "string" },
+        "source_ref": { "type": "string", "description": "公开来源档号/报表链接标识（去标识样例用代号）" },
+        "confidence": {
+          "type": "string",
+          "enum": ["confirmed", "provisional", "estimated", "stale"],
+          "description": "confirmed=部门定稿；provisional=初步数字；estimated=缺部门数据时估算；stale=数据过期"
+        },
+        "coverage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "跨部门数据覆盖率；低于阈值降为 provisional/estimated"
+        },
+        "is_late": { "type": "boolean", "description": "是否超过跨部门报送宽限" },
+        "note": { "type": "string", "description": "可选备注" },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "快照规范序列化后的 SHA-256，供监督复核"
+        }
+      },
+      "additionalProperties": false
+    },
+    "annual_plan": {
+      "type": "object",
+      "description": "年度施政方案：可调整实现路径（新增/替换节点、预测日期、预算修订），不得改写五年目标值。",
+      "required": ["plan_id", "fiscal_year", "title", "published_at", "status"],
+      "properties": {
+        "plan_id": { "type": "string" },
+        "fiscal_year": { "type": "string" },
+        "title": { "type": "string" },
+        "published_at": { "type": "string", "format": "date" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "consultation", "published", "superseded"]
+        },
+        "consultation_ids": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "revision": {
+      "type": "object",
+      "description": "路径调整/延期事件：必须显式标注是否触及五年目标，并给出理由与证据。",
+      "required": [
+        "revision_id",
+        "at",
+        "plan_id",
+        "target_id",
+        "milestone_id",
+        "kind",
+        "touches_five_year_target",
+        "reason",
+        "evidence_ids",
+        "by_org",
+        "decided_by",
+        "old",
+        "new"
+      ],
+      "properties": {
+        "revision_id": { "type": "string" },
+        "at": { "type": "string", "format": "date-time" },
+        "plan_id": { "type": "string" },
+        "target_id": { "type": "string" },
+        "milestone_id": { "type": "string" },
+        "kind": {
+          "type": "string",
+          "enum": ["path_change", "reschedule", "budget_revise", "metric_rebaseline", "scope_clarify"]
+        },
+        "touches_five_year_target": {
+          "type": "boolean",
+          "description": "true 表示触及五年目标值/口径实质——仅允许 metric_rebaseline 并附桥接，改写目标值须拒绝"
+        },
+        "reason": { "type": "string", "description": "对公众的延期/调整解释" },
+        "evidence_ids": { "type": "array", "items": { "type": "string" } },
+        "by_org": { "type": "string" },
+        "decided_by": { "type": "string", "description": "决策机制，如实讨论通过、部门批准" },
+        "old": { "type": "object" },
+        "new": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "metric_bridge": {
+      "type": "object",
+      "description": "统计口径桥接：口径变化时保留新旧并行值与换算系数，保证历史可比。",
+      "required": [
+        "bridge_id",
+        "metric_code",
+        "from_version",
+        "to_version",
+        "effective_at",
+        "method",
+        "factor",
+        "additive",
+        "restated_from_values",
+        "rationale"
+      ],
+      "properties": {
+        "bridge_id": { "type": "string" },
+        "metric_code": { "type": "string" },
+        "from_version": { "type": "string" },
+        "to_version": { "type": "string" },
+        "effective_at": { "type": "string", "format": "date" },
+        "method": { "type": "string", "enum": ["factor", "additive", "factor_additive", "parallel_series"] },
+        "factor": { "type": ["number", "null"] },
+        "additive": { "type": ["number", "null"] },
+        "restated_from_values": {
+          "type": "object",
+          "description": "关键历史时点按新口径重述的值：{时点: 值}",
+          "additionalProperties": { "type": "number" }
+        },
+        "rationale": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "data_notice": {
+      "type": "object",
+      "description": "跨部门数据迟到/缺报通知：期间相关判定降置信并标明。",
+      "required": [
+        "notice_id",
+        "target_id",
+        "org_code",
+        "expected_by",
+        "received_at",
+        "severity",
+        "impact"
+      ],
+      "properties": {
+        "notice_id": { "type": "string" },
+        "target_id": { "type": "string" },
+        "org_code": { "type": "string" },
+        "expected_by": { "type": "string", "format": "date-time" },
+        "received_at": { "type": ["string", "null"], "format": "date-time" },
+        "severity": { "type": "string", "enum": ["delayed", "missing", "recovered"] },
+        "impact": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "spatial_project": {
+      "type": "object",
+      "description": "空间/工务项目。未公开选址必须保密，公众视图只可见 district/granularity 与公开状态。",
+      "required": [
+        "spatial_project_id",
+        "name",
+        "project_type",
+        "district",
+        "site_public",
+        "granularity",
+        "site_location_classified",
+        "status",
+        "linked_target_ids"
+      ],
+      "properties": {
+        "spatial_project_id": { "type": "string" },
+        "name": { "type": "string" },
+        "project_type": {
+          "type": "string",
+          "enum": ["housing_development", "redevelopment", "healthcare_facility", "dchc", "youth_space", "other"]
+        },
+        "district": { "type": "string" },
+        "site_public": { "type": "boolean", "description": "选址是否已公开" },
+        "granularity": {
+          "type": "string",
+          "enum": ["site", "district_only"],
+          "description": "公众可见粒度；未公开选址仅 district_only"
+        },
+        "site_location_classified": {
+          "type": ["string", "null"],
+          "description": "内部选址标识，严禁出现在任何对外视图"
+        },
+        "status": { "type": "string", "enum": ["planning", "consultation", "works", "completed", "on_hold"] },
+        "linked_target_ids": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "consultation": {
+      "type": "object",
+      "description": "公众咨询：意见汇总与采纳情况关联回目标/节点。",
+      "required": [
+        "consultation_id",
+        "title",
+        "period_start",
+        "period_end",
+        "submissions_total",
+        "themes",
+        "linked_target_ids"
+      ],
+      "properties": {
+        "consultation_id": { "type": "string" },
+        "title": { "type": "string" },
+        "period_start": { "type": "string", "format": "date" },
+        "period_end": { "type": "string", "format": "date" },
+        "submissions_total": { "type": "integer", "minimum": 0 },
+        "themes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["theme", "count", "disposition", "response_summary"],
+            "properties": {
+              "theme": { "type": "string" },
+              "count": { "type": "integer", "minimum": 0 },
+              "disposition": {
+                "type": "string",
+                "enum": ["adopted", "partly_adopted", "noted", "declined"]
+              },
+              "response_summary": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "linked_target_ids": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  }
+}

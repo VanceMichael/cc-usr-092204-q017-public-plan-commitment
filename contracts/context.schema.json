@@ -6,9 +6,14 @@
     "project",
     "actors",
     "facts",
-    "terms"
+    "terms",
+    "sample_id"
   ],
   "properties": {
+    "sample_id": {
+      "type": "string",
+      "description": "样例资料编号，供审计与交换追溯"
+    },
     "project": {
       "type": "string",
       "description": "项目名称"
