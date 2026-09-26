@@ -1,0 +1,149 @@
+{
+  "bases": [
+    {
+      "basis_id": "B-HSE-A",
+      "pledge_id": "P-HOUSING",
+      "label": "公营房屋单位：取得入伙纸的累计落成量",
+      "effective_from": "2024-04-01",
+      "unit": "个单位"
+    },
+    {
+      "basis_id": "B-SD-A",
+      "pledge_id": "P-SUBDIVIDED",
+      "label": "分间单位：申报登记册核实并完成首轮巡查的累计单位数",
+      "effective_from": "2024-04-01",
+      "unit": "个单位"
+    },
+    {
+      "basis_id": "B-DHC-A",
+      "pledge_id": "P-HEALTH-DHC",
+      "label": "康健服务：累计登记会员人数（旧口径，含一次性登记）",
+      "effective_from": "2024-04-01",
+      "unit": "人"
+    },
+    {
+      "basis_id": "B-DHC-B",
+      "pledge_id": "P-HEALTH-DHC",
+      "label": "康健服务：过去12个月活跃使用服务的累计受惠人数（现行口径）",
+      "effective_from": "2026-01-01",
+      "unit": "人",
+      "bridge": {
+        "from_basis": "B-DHC-A",
+        "factor": 0.82,
+        "constant": -3000,
+        "note": "新口径＝旧口径×0.82−3,000：扣除重复登记后，再剔除过去12个月无使用记录者。历史数字按此桥接折算后保留可比。"
+      }
+    },
+    {
+      "basis_id": "B-BED-A",
+      "pledge_id": "P-HOSP-BEDS",
+      "label": "病床：完成验收并实际投入服务的新增病床累计数",
+      "effective_from": "2024-04-01",
+      "unit": "张"
+    },
+    {
+      "basis_id": "B-YTH-A",
+      "pledge_id": "P-YOUTH",
+      "label": "青年名额：完成全期实习或交流的累计参与名额",
+      "effective_from": "2024-04-01",
+      "unit": "个名额"
+    }
+  ],
+  "measurements": [
+    {
+      "measure_id": "M-HSE-2025Q4",
+      "pledge_id": "P-HOUSING",
+      "as_of_date": "2025-12-31",
+      "value": 52100,
+      "basis_id": "B-HSE-A",
+      "confidence": "verified",
+      "reported_by": "运输及房屋局统计组",
+      "reported_at": "2026-03-20",
+      "evidence_ids": ["EV-HSE-1"],
+      "note": "经审计的季度落成数字"
+    },
+    {
+      "measure_id": "M-HSE-2026Q1",
+      "pledge_id": "P-HOUSING",
+      "as_of_date": "2026-06-30",
+      "value": 84200,
+      "basis_id": "B-HSE-A",
+      "confidence": "provisional",
+      "reported_by": "运输及房屋局统计组",
+      "reported_at": "2026-09-24",
+      "evidence_ids": ["EV-HSE-2"],
+      "note": "初步数字，含两幢待发入伙纸屋邨的预计量"
+    },
+    {
+      "measure_id": "M-SD-2026Q2",
+      "pledge_id": "P-SUBDIVIDED",
+      "as_of_date": "2026-08-31",
+      "value": 17150,
+      "basis_id": "B-SD-A",
+      "confidence": "verified",
+      "reported_by": "民政事务总署",
+      "reported_at": "2026-09-20",
+      "evidence_ids": ["EV-SD-1"],
+      "note": "登记册与首轮巡查完成数，进度与年度曲线相若"
+    },
+    {
+      "measure_id": "M-DHC-2025Q4-OLD",
+      "pledge_id": "P-HEALTH-DHC",
+      "as_of_date": "2025-12-31",
+      "value": 86000,
+      "basis_id": "B-DHC-A",
+      "confidence": "verified",
+      "reported_by": "医务卫生局",
+      "reported_at": "2026-03-15",
+      "evidence_ids": ["EV-DHC-1"],
+      "note": "旧口径累计登记；桥接折算后约67,520人"
+    },
+    {
+      "measure_id": "M-DHC-2026Q1",
+      "pledge_id": "P-HEALTH-DHC",
+      "as_of_date": "2026-06-30",
+      "value": 131200,
+      "basis_id": "B-DHC-B",
+      "confidence": "verified",
+      "reported_by": "医务卫生局",
+      "reported_at": "2026-09-22",
+      "evidence_ids": ["EV-DHC-2"],
+      "note": "新口径首个完整半年数字，进度与年度曲线相若"
+    },
+    {
+      "measure_id": "M-BED-2025Q4",
+      "pledge_id": "P-HOSP-BEDS",
+      "as_of_date": "2025-12-31",
+      "value": 1950,
+      "basis_id": "B-BED-A",
+      "confidence": "verified",
+      "reported_by": "医院管理局",
+      "reported_at": "2026-04-25",
+      "evidence_ids": ["EV-BED-1"],
+      "note": "扩建座首批病床投入服务；2026年上半年数字跨部门核对未完成，尚未报送"
+    },
+    {
+      "measure_id": "M-YTH-2025Q4",
+      "pledge_id": "P-YOUTH",
+      "as_of_date": "2025-12-31",
+      "value": 9800,
+      "basis_id": "B-YTH-A",
+      "confidence": "verified",
+      "reported_by": "民政及青年事务局",
+      "reported_at": "2026-03-10",
+      "evidence_ids": ["EV-YTH-1"]
+    },
+    {
+      "measure_id": "M-YTH-2026Q1",
+      "pledge_id": "P-YOUTH",
+      "as_of_date": "2026-06-30",
+      "value": 17300,
+      "basis_id": "B-YTH-A",
+      "confidence": "provisional",
+      "reported_by": "民政及青年事务局",
+      "reported_at": "2026-09-18",
+      "evidence_ids": ["EV-YTH-2"],
+      "note": "初步数字，本地实习名额上半年度投入较快，待机构确认完成名单"
+    }
+  ]
+}

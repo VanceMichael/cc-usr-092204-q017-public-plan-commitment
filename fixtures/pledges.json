@@ -1,0 +1,136 @@
+{
+  "plan": "民生五年规划（2024–2029年度）",
+  "generated_at": "2024-03-20",
+  "pledges": [
+    {
+      "pledge_id": "P-HOUSING",
+      "title": "五年内增建公营房屋单位",
+      "domain": "房屋",
+      "unit": "个单位（累计落成）",
+      "plan_start_date": "2024-04-01",
+      "target_date": "2029-03-31",
+      "original_target": 196000,
+      "five_year_target": 196000,
+      "measurement_basis": "B-HSE-A",
+      "reporting_lag_days": 90,
+      "warning_pct": 0.04,
+      "breach_pct": 0.10,
+      "lead_agency": "房屋局",
+      "budget_envelope": {
+        "amount_hkd": 98500000000,
+        "note": "五年期公营房屋建设及配套拨款上限"
+      },
+      "milestones": [
+        { "milestone_id": "P-HOUSING-M1", "due_date": "2025-03-31", "cumulative_target": 32000, "label": "第一年度落成" },
+        { "milestone_id": "P-HOUSING-M2", "due_date": "2026-03-31", "cumulative_target": 70000, "label": "第二年度落成" },
+        { "milestone_id": "P-HOUSING-M3", "due_date": "2027-03-31", "cumulative_target": 110000, "label": "第三年度落成" },
+        { "milestone_id": "P-HOUSING-M4", "due_date": "2028-03-31", "cumulative_target": 153000, "label": "第四年度落成" },
+        { "milestone_id": "P-HOUSING-M5", "due_date": "2029-03-31", "cumulative_target": 196000, "label": "五年目标达成" }
+      ]
+    },
+    {
+      "pledge_id": "P-SUBDIVIDED",
+      "title": "劣质分间单位（劏房）登记与治理",
+      "domain": "住宅治理",
+      "unit": "个纳入登记治理的分间单位（累计）",
+      "plan_start_date": "2024-04-01",
+      "target_date": "2029-03-31",
+      "original_target": 42000,
+      "five_year_target": 42000,
+      "measurement_basis": "B-SD-A",
+      "reporting_lag_days": 60,
+      "warning_pct": 0.08,
+      "breach_pct": 0.15,
+      "lead_agency": "民政事务总署",
+      "budget_envelope": {
+        "amount_hkd": 3200000000,
+        "note": "登记、巡查与改善资助"
+      },
+      "milestones": [
+        { "milestone_id": "P-SD-M1", "due_date": "2025-03-31", "cumulative_target": 3000, "label": "登记册首阶段覆盖" },
+        { "milestone_id": "P-SD-M2", "due_date": "2026-03-31", "cumulative_target": 12000, "label": "重点区巡查治理" },
+        { "milestone_id": "P-SD-M3", "due_date": "2027-03-31", "cumulative_target": 24000, "label": "全港登记覆盖" },
+        { "milestone_id": "P-SD-M4", "due_date": "2028-03-31", "cumulative_target": 34000, "label": "改善工程主体完成" },
+        { "milestone_id": "P-SD-M5", "due_date": "2029-03-31", "cumulative_target": 42000, "label": "五年目标达成" }
+      ]
+    },
+    {
+      "pledge_id": "P-HEALTH-DHC",
+      "title": "地区康健中心基层医疗受惠人数",
+      "domain": "基层医疗",
+      "unit": "人（累计活跃受惠）",
+      "plan_start_date": "2024-04-01",
+      "target_date": "2029-03-31",
+      "original_target": 300000,
+      "five_year_target": 300000,
+      "measurement_basis": "B-DHC-B",
+      "reporting_lag_days": 90,
+      "warning_pct": 0.05,
+      "breach_pct": 0.10,
+      "lead_agency": "医务卫生局",
+      "budget_envelope": {
+        "amount_hkd": 3920000000,
+        "note": "地区康健中心及地区康健站网络"
+      },
+      "milestones": [
+        { "milestone_id": "P-DHC-M1", "due_date": "2025-03-31", "cumulative_target": 40000, "label": "中心网络扩展" },
+        { "milestone_id": "P-DHC-M2", "due_date": "2026-03-31", "cumulative_target": 100000, "label": "慢病管理覆盖" },
+        { "milestone_id": "P-DHC-M3", "due_date": "2027-03-31", "cumulative_target": 170000, "label": "全站网络覆盖" },
+        { "milestone_id": "P-DHC-M4", "due_date": "2028-03-31", "cumulative_target": 240000, "label": "家庭医生转介普及" },
+        { "milestone_id": "P-DHC-M5", "due_date": "2029-03-31", "cumulative_target": 300000, "label": "五年目标达成" }
+      ]
+    },
+    {
+      "pledge_id": "P-HOSP-BEDS",
+      "title": "公立医院新增病床",
+      "domain": "医疗床位",
+      "unit": "张（累计投入服务）",
+      "plan_start_date": "2024-04-01",
+      "target_date": "2029-03-31",
+      "original_target": 9000,
+      "five_year_target": 9000,
+      "measurement_basis": "B-BED-A",
+      "reporting_lag_days": 120,
+      "warning_pct": 0.08,
+      "breach_pct": 0.15,
+      "lead_agency": "医院管理局",
+      "budget_envelope": {
+        "amount_hkd": 49800000000,
+        "note": "医院发展工程及首批设备"
+      },
+      "milestones": [
+        { "milestone_id": "P-BED-M1", "due_date": "2025-03-31", "cumulative_target": 900, "label": "首批扩建病床" },
+        { "milestone_id": "P-BED-M2", "due_date": "2026-03-31", "cumulative_target": 2100, "label": "第二批次投入" },
+        { "milestone_id": "P-BED-M3", "due_date": "2027-03-31", "cumulative_target": 3900, "label": "新院座首期" },
+        { "milestone_id": "P-BED-M4", "due_date": "2028-03-31", "cumulative_target": 6300, "label": "新院座次期" },
+        { "milestone_id": "P-BED-M5", "due_date": "2029-03-31", "cumulative_target": 9000, "label": "五年目标达成" }
+      ]
+    },
+    {
+      "pledge_id": "P-YOUTH",
+      "title": "青年实习与交流名额",
+      "domain": "青年发展",
+      "unit": "个名额（累计参与）",
+      "plan_start_date": "2024-04-01",
+      "target_date": "2029-03-31",
+      "original_target": 60000,
+      "five_year_target": 54000,
+      "measurement_basis": "B-YTH-A",
+      "reporting_lag_days": 90,
+      "warning_pct": 0.05,
+      "breach_pct": 0.12,
+      "lead_agency": "民政及青年事务局",
+      "budget_envelope": {
+        "amount_hkd": 1450000000,
+        "note": "青年生涯规划、实习与双向交流"
+      },
+      "milestones": [
+        { "milestone_id": "P-YTH-M1", "due_date": "2025-03-31", "cumulative_target": 6000, "label": "本地实习先导" },
+        { "milestone_id": "P-YTH-M2", "due_date": "2026-03-31", "cumulative_target": 14000, "label": "行业网络扩展" },
+        { "milestone_id": "P-YTH-M3", "due_date": "2027-03-31", "cumulative_target": 24000, "label": "境外交流复办" },
+        { "milestone_id": "P-YTH-M4", "due_date": "2028-03-31", "cumulative_target": 38000, "label": "资助计划恒常化" },
+        { "milestone_id": "P-YTH-M5", "due_date": "2029-03-31", "cumulative_target": 54000, "label": "修订后五年目标达成" }
+      ]
+    }
+  ]
+}

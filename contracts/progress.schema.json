@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "统计口径与进度量度",
+  "type": "object",
+  "required": ["bases", "measurements"],
+  "properties": {
+    "bases": {
+      "type": "array",
+      "description": "统计口径定义；口径变化时以桥接公式保留可比性",
+      "items": {
+        "type": "object",
+        "required": ["basis_id", "pledge_id", "label", "effective_from", "unit"],
+        "properties": {
+          "basis_id": { "type": "string" },
+          "pledge_id": { "type": "string" },
+          "label": { "type": "string" },
+          "effective_from": { "type": "string" },
+          "unit": { "type": "string" },
+          "bridge": {
+            "type": "object",
+            "description": "折算到上一版口径后，再到承诺口径的换算：新口径值 = 旧口径值 × factor + constant",
+            "required": ["from_basis", "factor", "constant", "note"],
+            "properties": {
+              "from_basis": { "type": "string" },
+              "factor": { "type": "number" },
+              "constant": { "type": "number" },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "measure_id",
+          "pledge_id",
+          "as_of_date",
+          "value",
+          "basis_id",
+          "confidence",
+          "reported_by",
+          "reported_at",
+          "evidence_ids"
+        ],
+        "properties": {
+          "measure_id": { "type": "string" },
+          "pledge_id": { "type": "string" },
+          "as_of_date": { "type": "string", "description": "数据截止日（累计值）" },
+          "value": { "type": "number" },
+          "basis_id": { "type": "string" },
+          "confidence": {
+            "type": "string",
+            "enum": ["verified", "provisional"],
+            "description": "verified=已核实；provisional=初步数字；数据迟到由系统派生 overdue_pending"
+          },
+          "reported_by": { "type": "string" },
+          "reported_at": { "type": "string" },
+          "evidence_ids": { "type": "array", "items": { "type": "string" } },
+          "note": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "空间项目、证据快照、咨询意见、授权反馈与修订记录",
+  "type": "object",
+  "required": ["sites", "evidence", "opinions", "feedback", "revisions"],
+  "properties": {
+    "sites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["site_id", "district", "disclosure_status"],
+        "properties": {
+          "site_id": { "type": "string" },
+          "public_name": { "type": "string", "description": "可公开的泛化名称" },
+          "district": { "type": "string" },
+          "disclosure_status": { "type": "string", "enum": ["public", "embargoed"] },
+          "address": { "type": ["string", "null"], "description": "未公开选址必须为 null" }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["evidence_id", "title", "source_ref", "captured_at", "sha256"],
+        "properties": {
+          "evidence_id": { "type": "string" },
+          "title": { "type": "string" },
+          "source_ref": { "type": "string" },
+          "captured_at": { "type": "string" },
+          "sha256": { "type": "string", "description": "证据快照内容校验值" }
+        }
+      }
+    },
+    "opinions": {
+      "type": "array",
+      "description": "公众咨询意见：仅存去标识摘要与主题计数",
+      "items": {
+        "type": "object",
+        "required": ["opinion_id", "received_date", "channel", "summary"],
+        "properties": {
+          "opinion_id": { "type": "string" },
+          "pledge_id": { "type": "string" },
+          "received_date": { "type": "string" },
+          "channel": { "type": "string" },
+          "theme": { "type": "string" },
+          "summary": { "type": "string" },
+          "aggregate_count": { "type": "integer", "description": "聚合记录代表的意见份数" }
+        }
+      }
+    },
+    "feedback": {
+      "type": "array",
+      "description": "社区组织个案反馈：仅限授权范围，不得含个人识别资料",
+      "items": {
+        "type": "object",
+        "required": [
+          "feedback_id",
+          "org_id",
+          "pledge_id",
+          "case_ref",
+          "received_date",
+          "category",
+          "summary",
+          "authorization"
+        ],
+        "properties": {
+          "feedback_id": { "type": "string" },
+          "org_id": { "type": "string" },
+          "pledge_id": { "type": "string" },
+          "case_ref": { "type": "string" },
+          "received_date": { "type": "string" },
+          "category": { "type": "string" },
+          "summary": { "type": "string" },
+          "authorization": {
+            "type": "object",
+            "required": ["scope", "granted_by", "granted_until", "case_ids_authorized"],
+            "properties": {
+              "scope": { "type": "string", "enum": ["case"] },
+              "granted_by": { "type": "string" },
+              "granted_until": { "type": "string" },
+              "case_ids_authorized": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "revisions": {
+      "type": "array",
+      "description": "修订记录：路径调整不得改写五年目标；目标调整须为正式修订并可链式重算",
+      "items": {
+        "type": "object",
+        "required": ["revision_id", "kind", "date", "rationale", "approved_by"],
+        "properties": {
+          "revision_id": { "type": "string" },
+          "kind": { "type": "string", "enum": ["pathway", "target"] },
+          "initiative_id": { "type": "string" },
+          "pledge_id": { "type": "string" },
+          "date": { "type": "string" },
+          "rationale": { "type": "string" },
+          "approved_by": { "type": "string" },
+          "old_target": { "type": "number" },
+          "new_target": { "type": "number" },
+          "public_explanation": { "type": "string", "description": "对市民公布的延期/调整解释" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "sites": [
+    {
+      "site_id": "S-HSE-PUB1",
+      "public_name": "东涌东公屋发展区（已刊宪地段）",
+      "district": "离岛",
+      "disclosure_status": "public",
+      "address": "东涌东扩展区已平整土地（位置见刊宪图则）"
+    },
+    {
+      "site_id": "S-HSE-EMB1",
+      "public_name": "新界北某规划中扩展地块",
+      "district": "北区",
+      "disclosure_status": "embargoed",
+      "address": null
+    },
+    {
+      "site_id": "S-DHC-PUB1",
+      "public_name": "葵青地区康健中心",
+      "district": "葵青",
+      "disclosure_status": "public",
+      "address": "葵青区内已公布市政设施大楼"
+    },
+    {
+      "site_id": "S-BED-PUB1",
+      "public_name": "北大屿山医院扩建座",
+      "district": "离岛",
+      "disclosure_status": "public",
+      "address": "北大屿山医院现有院区"
+    },
+    {
+      "site_id": "S-BED-EMB1",
+      "public_name": "新界某规划中新急症医院选址",
+      "district": "新界（具体地区待刊宪）",
+      "disclosure_status": "embargoed",
+      "address": null
+    },
+    {
+      "site_id": "S-YTH-PUB1",
+      "public_name": "青年交流共享空间（北角）",
+      "district": "东区",
+      "disclosure_status": "public",
+      "address": "北角已公布青年设施"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EV-HSE-1",
+      "title": "2025年第四季公营房屋落成量新闻公报快照",
+      "source_ref": "房屋局公报2026年第09号（存档副本）",
+      "captured_at": "2026-03-20T10:00:00+08:00",
+      "sha256": "9f2c4a7b1e8d6f30a5c2b9e4d7f1086a2c3e5b7d9f104268ace05bdf98765401"
+    },
+    {
+      "evidence_id": "EV-HSE-2",
+      "title": "2026年第二季初步落成数字内部核对表（已截录公开栏位）",
+      "source_ref": "房屋署工程进度季报2026Q2",
+      "captured_at": "2026-09-24T16:30:00+08:00",
+      "sha256": "1a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f809"
+    },
+    {
+      "evidence_id": "EV-SD-1",
+      "title": "分间单位登记册统计页面快照",
+      "source_ref": "民政事务总署专页存档",
+      "captured_at": "2026-08-28T09:15:00+08:00",
+      "sha256": "c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f7081920a1b"
+    },
+    {
+      "evidence_id": "EV-DHC-1",
+      "title": "2025年康健中心会员统计公报（旧口径末次发布）",
+      "source_ref": "医务卫生局公报2026年第04号",
+      "captured_at": "2026-03-15T11:00:00+08:00",
+      "sha256": "0f1e2d3c4b5a69788796a5b4c3d2e1f00f1e2d3c4b5a69788796a5b4c3d2e1f0"
+    },
+    {
+      "evidence_id": "EV-DHC-2",
+      "title": "2026年上半年活跃受惠人数发布（新口径）",
+      "source_ref": "医务卫生局公报2026年第21号",
+      "captured_at": "2026-09-22T14:00:00+08:00",
+      "sha256": "abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789"
+    },
+    {
+      "evidence_id": "EV-BED-1",
+      "title": "北大屿山医院扩建座启用病床清单",
+      "source_ref": "医院管理局提交立法会卫生事务委员会文件",
+      "captured_at": "2026-04-25T10:45:00+08:00",
+      "sha256": "deadbeefcafebabe1234567890abcdefdeadbeefcafebabe1234567890abcdef"
+    },
+    {
+      "evidence_id": "EV-YTH-1",
+      "title": "2025年青年实习交流计划参与人数年报截录",
+      "source_ref": "民政及青年事务局年报2025",
+      "captured_at": "2026-03-10T15:20:00+08:00",
+      "sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    },
+    {
+      "evidence_id": "EV-YTH-2",
+      "title": "2026年上半年计划参与初步名单计数（去标识）",
+      "source_ref": "计划秘书处季度报表2026Q2",
+      "captured_at": "2026-09-18T17:00:00+08:00",
+      "sha256": "fedcba9876543210fedcba9876543210fedcba9876543210fedcba9876543210"
+    }
+  ],
+  "opinions": [
+    {
+      "opinion_id": "OP-HSE-1",
+      "pledge_id": "P-HOUSING",
+      "received_date": "2024-02-28",
+      "channel": "公众咨询（地区论坛及书面意见）",
+      "theme": "公屋轮候时间与建屋选址",
+      "summary": "意见普遍要求优先缩短一般申请者轮候时间，并要求扩展区批次延误时及早公布替代安排；另有意见关注新发展区交通配套。",
+      "aggregate_count": 6200
+    },
+    {
+      "opinion_id": "OP-SD-1",
+      "pledge_id": "P-SUBDIVIDED",
+      "received_date": "2024-02-28",
+      "channel": "公众咨询（书面意见及社区组织）",
+      "theme": "劏房安全与居住环境",
+      "summary": "意见要求加快强制登记与巡查、改善排水消防，避免巡查导致加租或逼迁，需要与过渡性房屋转介衔接。",
+      "aggregate_count": 4100
+    },
+    {
+      "opinion_id": "OP-HC-1",
+      "pledge_id": "P-HEALTH-DHC",
+      "received_date": "2024-02-28",
+      "channel": "公众咨询（医疗界及地区组织）",
+      "theme": "基层医疗可及性",
+      "summary": "意见要求康健中心尽快覆盖全港十八区、加强家庭医生转介与夜诊服务，并希望公布按区受惠人数。",
+      "aggregate_count": 5300
+    },
+    {
+      "opinion_id": "OP-YTH-1",
+      "pledge_id": "P-YOUTH",
+      "received_date": "2024-02-28",
+      "channel": "青年自助平台及焦点小组",
+      "theme": "实习与交流机会",
+      "summary": "青年意见关注实习名额的行业分布、津贴水平与境外交流复办进度。",
+      "aggregate_count": 1800
+    }
+  ],
+  "feedback": [
+    {
+      "feedback_id": "FB-0001",
+      "org_id": "ORG-NGO-07",
+      "pledge_id": "P-SUBDIVIDED",
+      "case_ref": "CASE-SD-2026-0042",
+      "received_date": "2026-07-08",
+      "category": "巡查后业主逼迁",
+      "summary": "社区组织代授权住户反映：登记巡查后业主发出迁离通知，住户要求转介过渡性房屋。记录不含姓名及完整地址。",
+      "authorization": {
+        "scope": "case",
+        "granted_by": "个案当事人（经社区组织见证）",
+        "granted_until": "2027-07-08",
+        "case_ids_authorized": ["CASE-SD-2026-0042"]
+      }
+    },
+    {
+      "feedback_id": "FB-0002",
+      "org_id": "ORG-NGO-12",
+      "pledge_id": "P-HEALTH-DHC",
+      "case_ref": "CASE-DHC-2026-0107",
+      "received_date": "2026-08-19",
+      "category": "转介轮候",
+      "summary": "授权个案反映由家庭医生转介至康健中心后轮候健康评估超过六星期，仅记录个案编号与类别。",
+      "authorization": {
+        "scope": "case",
+        "granted_by": "个案当事人（电子同意记录）",
+        "granted_until": "2027-08-19",
+        "case_ids_authorized": ["CASE-DHC-2026-0107"]
+      }
+    }
+  ],
+  "revisions": [
+    {
+      "revision_id": "R-2025-PW1",
+      "kind": "pathway",
+      "initiative_id": "I-H3",
+      "pledge_id": "P-HOUSING",
+      "date": "2025-11-20",
+      "rationale": "扩展区前期管线改置工程在跨部门协调下需顺延约九个月；把建造招标重新排期至2027年第三季，受影响单位并入2028–2029落成曲线。",
+      "approved_by": "房屋局局长（经年度施政方案调整程序）",
+      "public_explanation": "新界北扩展批次因前期工程顺延九个月，落成单位重新编排在其后两个年度，五年196,000个单位目标维持不变，市民可在承诺页查看新的年度曲线。"
+    },
+    {
+      "revision_id": "R-2025-TG1",
+      "kind": "target",
+      "initiative_id": "I-Y2",
+      "pledge_id": "P-YOUTH",
+      "date": "2025-11-20",
+      "rationale": "境外双向交流名额复办进度持续低于规划假设，经咨询后把资源转向本地实习，正式调整五年名额目标。",
+      "approved_by": "行政会议（经年度施政报告修订程序）",
+      "old_target": 60000,
+      "new_target": 54000,
+      "public_explanation": "青年计划五年名额由60,000个正式修订为54,000个：境外交流复办慢于预期，腾出的资源用于本地在职实习。修订经过正式程序，原规划目标与桥接数字在修订链中保留可查。"
+    }
+  ]
+}

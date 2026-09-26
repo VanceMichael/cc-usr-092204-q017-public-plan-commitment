@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "年度施政项目",
+  "type": "object",
+  "required": ["initiatives"],
+  "properties": {
+    "initiatives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "initiative_id",
+          "pledge_id",
+          "fiscal_year",
+          "title",
+          "agency",
+          "budget_hkd",
+          "pathway",
+          "site_ids",
+          "consultation_refs",
+          "status",
+          "target_altered"
+        ],
+        "properties": {
+          "initiative_id": { "type": "string" },
+          "pledge_id": { "type": "string" },
+          "fiscal_year": { "type": "string" },
+          "title": { "type": "string" },
+          "agency": { "type": "string" },
+          "budget_hkd": { "type": "number" },
+          "pathway": { "type": "string", "description": "该项目实现承诺目标的路径说明" },
+          "site_ids": { "type": "array", "items": { "type": "string" } },
+          "consultation_refs": { "type": "array", "items": { "type": "string" } },
+          "status": { "type": "string", "enum": ["active", "completed", "rephased"] },
+          "target_altered": { "type": "boolean", "description": "是否改变五年目标；路径调整必须为 false" },
+          "revision_id": { "type": "string", "description": "rephased 项目须关联的修订记录" },
+          "superseded_by": { "type": "string" }
+        }
+      }
+    }
+  }
+}

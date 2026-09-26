@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "五年承诺目标清单",
+  "type": "object",
+  "required": ["plan", "generated_at", "pledges"],
+  "properties": {
+    "plan": { "type": "string", "description": "五年规划名称及期次" },
+    "generated_at": { "type": "string", "description": "发布日期" },
+    "pledges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pledge_id",
+          "title",
+          "domain",
+          "unit",
+          "plan_start_date",
+          "target_date",
+          "original_target",
+          "five_year_target",
+          "measurement_basis",
+          "reporting_lag_days",
+          "warning_pct",
+          "breach_pct",
+          "lead_agency",
+          "budget_envelope",
+          "milestones"
+        ],
+        "properties": {
+          "pledge_id": { "type": "string" },
+          "title": { "type": "string" },
+          "domain": { "type": "string" },
+          "unit": { "type": "string", "description": "承诺计量单位" },
+          "plan_start_date": { "type": "string" },
+          "target_date": { "type": "string" },
+          "original_target": { "type": "number", "description": "规划公布时的原目标" },
+          "five_year_target": { "type": "number", "description": "当前五年目标；仅可经正式目标修订改变" },
+          "measurement_basis": { "type": "string", "description": "当前统计口径编号" },
+          "reporting_lag_days": { "type": "integer", "minimum": 1 },
+          "warning_pct": { "type": "number", "minimum": 0, "maximum": 1 },
+          "breach_pct": { "type": "number", "minimum": 0, "maximum": 1 },
+          "lead_agency": { "type": "string" },
+          "budget_envelope": {
+            "type": "object",
+            "required": ["amount_hkd"],
+            "properties": {
+              "amount_hkd": { "type": "number" },
+              "note": { "type": "string" }
+            }
+          },
+          "milestones": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["milestone_id", "due_date", "cumulative_target", "label"],
+              "properties": {
+                "milestone_id": { "type": "string" },
+                "due_date": { "type": "string" },
+                "cumulative_target": { "type": "number" },
+                "label": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
